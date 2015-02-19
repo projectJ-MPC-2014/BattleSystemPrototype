@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['name_5fm',['name_m',['../class_character.html#ae84b80fb6ac2e9271506c84b71d657f6',1,'Character']]],
-  ['number_5fof_5fcommands_5fm',['NUMBER_OF_COMMANDS_m',['../class_battle_commands.html#afdec7871d4e52ef80316212c49c80dcd',1,'BattleCommands']]]
+  ['magic_5fm',['magic_m',['../struct_chara_data.html#ad76e5c9e2a90755979af927101ec43ac',1,'CharaData']]]
 ];

@@ -1,18 +1,6 @@
 #include "TestBattle.h"
 
 
-
-
-
-TestBattle::TestBattle()
-{
-}
-
-
-TestBattle::~TestBattle()
-{
-}
-
 void TestBattle::testPrint( CharaList &characters )
 {
 	auto printStatus = []( Character *character ){
@@ -30,30 +18,25 @@ void TestBattle::testPrint( CharaList &characters )
 	std::for_each( characters.begin(), characters.end(), printStatus );
 }
 
-void TestBattle::testScan( Character* attacker, CharaList &characters )
-{
 
-	Selection selection = attacker->select( characters );
-
-	command_m = selection.command_m;
-	target_m = selection.target_m;
-}
 
 void TestBattle::testAttack( Character* attacker, CharaList &characters )
 {
-	auto searchName = [this]( Character* character1 ) {
-		return character1->name_m == target_m;
+	std::string skillName = attacker->getSelection().skillName_m;
+
+	auto searchName = [attacker]( Character* character1 ) {
+		return character1->name_m == attacker->getSelection().target_m;
 	};
 
 	Character &target = **std::find_if( characters.begin(), characters.end(), searchName );
 
-	if( command_m == "attack" ) {
+	if( skillName == "attack" ) {
 		attacker->attack( target );
 	}
-	else if( command_m == "magic" ) {
+	else if( skillName == "magic" ) {
 		attacker->magic( target );
 	}
-	else if( command_m == "care" ) {
+	else if( skillName == "care" ) {
 		attacker->care( target );
 	}
 	else {}

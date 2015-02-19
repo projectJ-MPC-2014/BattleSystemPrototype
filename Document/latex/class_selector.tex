@@ -1,0 +1,71 @@
+\hypertarget{class_selector}{}\section{Selector Class Reference}
+\label{class_selector}\index{Selector@{Selector}}
+
+
+{\ttfamily \#include $<$Selector.\+h$>$}
+
+Inheritance diagram for Selector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_selector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_selector_aa0ad3d8a77d1fc05b5c63154f3ce9e12}{Selector} ()=default
+\item 
+virtual \hyperlink{class_selector_aadde929b3590fb6d34ac9ec91333ce5c}{$\sim$\+Selector} ()=default
+\item 
+virtual int \hyperlink{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{select} (\hyperlink{class_character}{Character} $\ast$attacker, \hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} characters)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+コマンドを選択するクラス 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_selector_aa0ad3d8a77d1fc05b5c63154f3ce9e12}{}\index{Selector@{Selector}!Selector@{Selector}}
+\index{Selector@{Selector}!Selector@{Selector}}
+\subsubsection[{Selector}]{\setlength{\rightskip}{0pt plus 5cm}Selector\+::\+Selector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_selector_aa0ad3d8a77d1fc05b5c63154f3ce9e12}
+コンストラクタ \hypertarget{class_selector_aadde929b3590fb6d34ac9ec91333ce5c}{}\index{Selector@{Selector}!````~Selector@{$\sim$\+Selector}}
+\index{````~Selector@{$\sim$\+Selector}!Selector@{Selector}}
+\subsubsection[{$\sim$\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}virtual Selector\+::$\sim$\+Selector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\label{class_selector_aadde929b3590fb6d34ac9ec91333ce5c}
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{}\index{Selector@{Selector}!select@{select}}
+\index{select@{select}!Selector@{Selector}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Selector\+::select (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{attacker, }
+\item[{{\bf Chara\+List}}]{characters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_selector_a63996c865b5c992deee9c92d3d02cfd3}
+指定されたキャラクターの行動を選択する 
+\begin{DoxyParams}{Parameters}
+{\em attacker} & 攻撃者 \\
+\hline
+{\em characters} & 全キャラクター \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+選択されたかどうか 選択されたら1 選択されなかったら0 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_c_u_i_selector_a6aafe213a1f62617089e5f37eabd7fbc}{C\+U\+I\+Selector}, and \hyperlink{class_random_selector_ab5d7b7d795cdae3f329484c1d305e9e1}{Random\+Selector}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Selector/\hyperlink{_selector_8h}{Selector.\+h}\end{DoxyCompactItemize}

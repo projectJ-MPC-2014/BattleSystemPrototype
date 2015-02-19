@@ -17,11 +17,12 @@ class Character;
 
 struct Selection
 {
-	std::string command_m;
+	std::string skillName_m;
 	std::string target_m;
 };
 
 typedef std::list<Character*> CharaList;
+
 CharaList getAvailableTargets(
 	Character*attacker,
 	CharaList &characters,
@@ -31,25 +32,23 @@ class Character
 {
 protected:
 	Iff iff_m;
+	Selection selection_m;
 public:
 	CharaData data_m;
 	std::string name_m;
 	int id_m;
 public:
 	Character(std::string name, CharaData data, int id);
-	virtual ~Character();
+	virtual ~Character() = default;
 protected:
 	void damage(int damage);
 	void heal(int heal);
-	
-
 public:
 	void magic( Character &target );
 	void attack(Character &target);
 	void care( Character &target );
-	virtual std::string selectTarget( CharaList &characters, std::string skillName) = 0;
-	virtual std::string selectCommand(CharaList &characters) = 0;
-	Selection select( CharaList &characters );
+	Selection getSelection();
+	void Character::select( Selection const &selection );
 	Iff getIff();
 };
 

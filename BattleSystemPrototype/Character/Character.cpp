@@ -72,11 +72,9 @@ Iff Character::getIff()
 	return iff_m;
 }
 
-Selection Character::select( CharaList &characters )
+void Character::select( Selection const &selection )
 {
-	std::string skillName = selectCommand(characters);
-	std::string target = selectTarget( characters ,skillName);
-	return{ skillName, target };
+	selection_m = selection;
 }
 
 
@@ -90,5 +88,7 @@ Character::Character(std::string name, CharaData data, int id)
 		data_m.isAlive_m == true);
 }
 
-Character::~Character(){}
-
+Selection Character::getSelection()
+{
+	return selection_m;
+}

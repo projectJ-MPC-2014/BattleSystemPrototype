@@ -26,7 +26,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_battle_command_8cpp.html"
+"_battle_commands_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

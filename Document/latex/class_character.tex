@@ -15,7 +15,7 @@ Inheritance diagram for Character\+:\begin{figure}[H]
 \item 
 \hyperlink{class_character_abcabc54ae5d60699204c5db2484fc116}{Character} (std\+::string name, \hyperlink{struct_chara_data}{Chara\+Data} data, int id)
 \item 
-virtual \hyperlink{class_character_a9e9be564d05ded80962b2045aa70b3fc}{$\sim$\+Character} ()
+virtual \hyperlink{class_character_a3333a88ae593c36b229c90371e935d42}{$\sim$\+Character} ()=default
 \item 
 void \hyperlink{class_character_a04eee23fbdb9c13b806d6ff0d9131c04}{magic} (\hyperlink{class_character}{Character} \&target)
 \item 
@@ -23,11 +23,9 @@ void \hyperlink{class_character_a459859c74ba468345de63f436ee4442b}{attack} (\hyp
 \item 
 void \hyperlink{class_character_a1933b175d4533053433422522da38181}{care} (\hyperlink{class_character}{Character} \&target)
 \item 
-virtual std\+::string \hyperlink{class_character_ae19b0e8ed69d12e5692102b576140bce}{select\+Target} (\hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} \&characters, std\+::string skill\+Name)=0
+\hyperlink{struct_selection}{Selection} \hyperlink{class_character_a854b7c44f252ed1c8456112ca2bee9a1}{get\+Selection} ()
 \item 
-virtual std\+::string \hyperlink{class_character_a897f2efbde1d1edab2f5f4a6df5bc560}{select\+Command} (\hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} \&characters)=0
-\item 
-\hyperlink{struct_selection}{Selection} \hyperlink{class_character_add24df0e1c1c6c0eea244971c5c47939}{select} (\hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} \&characters)
+void \hyperlink{class_character_ab209a191029576ff3f4ae2cc136733bf}{select} (\hyperlink{struct_selection}{Selection} const \&selection)
 \item 
 \hyperlink{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8}{Iff} \hyperlink{class_character_aa2766fd908e56f386c6a946c9cde4c5d}{get\+Iff} ()
 \end{DoxyCompactItemize}
@@ -51,6 +49,8 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8}{Iff} \hyperlink{class_character_a2ca852f598c4e20b5d932355379c4ac0}{iff\+\_\+m}
+\item 
+\hyperlink{struct_selection}{Selection} \hyperlink{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}{selection\+\_\+m}
 \end{DoxyCompactItemize}
 
 
@@ -64,13 +64,13 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \item[{int}]{id}
 \end{DoxyParamCaption}
 )}\label{class_character_abcabc54ae5d60699204c5db2484fc116}
-\hypertarget{class_character_a9e9be564d05ded80962b2045aa70b3fc}{}\index{Character@{Character}!````~Character@{$\sim$\+Character}}
+\hypertarget{class_character_a3333a88ae593c36b229c90371e935d42}{}\index{Character@{Character}!````~Character@{$\sim$\+Character}}
 \index{````~Character@{$\sim$\+Character}!Character@{Character}}
-\subsubsection[{$\sim$\+Character}]{\setlength{\rightskip}{0pt plus 5cm}Character\+::$\sim$\+Character (
+\subsubsection[{$\sim$\+Character}]{\setlength{\rightskip}{0pt plus 5cm}virtual Character\+::$\sim$\+Character (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_character_a9e9be564d05ded80962b2045aa70b3fc}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\label{class_character_a3333a88ae593c36b229c90371e935d42}
 
 
 \subsection{Member Function Documentation}
@@ -102,6 +102,13 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 {}
 \end{DoxyParamCaption}
 )}\label{class_character_aa2766fd908e56f386c6a946c9cde4c5d}
+\hypertarget{class_character_a854b7c44f252ed1c8456112ca2bee9a1}{}\index{Character@{Character}!get\+Selection@{get\+Selection}}
+\index{get\+Selection@{get\+Selection}!Character@{Character}}
+\subsubsection[{get\+Selection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Character\+::get\+Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_character_a854b7c44f252ed1c8456112ca2bee9a1}
 \hypertarget{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{}\index{Character@{Character}!heal@{heal}}
 \index{heal@{heal}!Character@{Character}}
 \subsubsection[{heal}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::heal (
@@ -116,36 +123,13 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \item[{{\bf Character} \&}]{target}
 \end{DoxyParamCaption}
 )}\label{class_character_a04eee23fbdb9c13b806d6ff0d9131c04}
-\hypertarget{class_character_add24df0e1c1c6c0eea244971c5c47939}{}\index{Character@{Character}!select@{select}}
+\hypertarget{class_character_ab209a191029576ff3f4ae2cc136733bf}{}\index{Character@{Character}!select@{select}}
 \index{select@{select}!Character@{Character}}
-\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Character\+::select (
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::select (
 \begin{DoxyParamCaption}
-\item[{{\bf Chara\+List} \&}]{characters}
+\item[{{\bf Selection} const \&}]{selection}
 \end{DoxyParamCaption}
-)}\label{class_character_add24df0e1c1c6c0eea244971c5c47939}
-\hypertarget{class_character_a897f2efbde1d1edab2f5f4a6df5bc560}{}\index{Character@{Character}!select\+Command@{select\+Command}}
-\index{select\+Command@{select\+Command}!Character@{Character}}
-\subsubsection[{select\+Command}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Character\+::select\+Command (
-\begin{DoxyParamCaption}
-\item[{{\bf Chara\+List} \&}]{characters}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_character_a897f2efbde1d1edab2f5f4a6df5bc560}
-
-
-Implemented in \hyperlink{class_enemy_a37e64fda97017f08403a1259da0ce72f}{Enemy}, and \hyperlink{class_player_a2dbcfb38080a64dab3f9b721486ab38d}{Player}.
-
-\hypertarget{class_character_ae19b0e8ed69d12e5692102b576140bce}{}\index{Character@{Character}!select\+Target@{select\+Target}}
-\index{select\+Target@{select\+Target}!Character@{Character}}
-\subsubsection[{select\+Target}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Character\+::select\+Target (
-\begin{DoxyParamCaption}
-\item[{{\bf Chara\+List} \&}]{characters, }
-\item[{std\+::string}]{skill\+Name}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_character_ae19b0e8ed69d12e5692102b576140bce}
-
-
-Implemented in \hyperlink{class_enemy_a66c2a77b5369ef1b51d5594205f25ffb}{Enemy}, and \hyperlink{class_player_a38ca95dfba650f93b6dba8a531991f45}{Player}.
-
+)}\label{class_character_ab209a191029576ff3f4ae2cc136733bf}
 
 
 \subsection{Member Data Documentation}
@@ -161,9 +145,12 @@ Implemented in \hyperlink{class_enemy_a66c2a77b5369ef1b51d5594205f25ffb}{Enemy},
 \hypertarget{class_character_ae84b80fb6ac2e9271506c84b71d657f6}{}\index{Character@{Character}!name\+\_\+m@{name\+\_\+m}}
 \index{name\+\_\+m@{name\+\_\+m}!Character@{Character}}
 \subsubsection[{name\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Character\+::name\+\_\+m}\label{class_character_ae84b80fb6ac2e9271506c84b71d657f6}
+\hypertarget{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}{}\index{Character@{Character}!selection\+\_\+m@{selection\+\_\+m}}
+\index{selection\+\_\+m@{selection\+\_\+m}!Character@{Character}}
+\subsubsection[{selection\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Character\+::selection\+\_\+m\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\hyperlink{_character_8h}{Character.\+h}\item 
-C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\hyperlink{_character_8cpp}{Character.\+cpp}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Character/\hyperlink{_character_8h}{Character.\+h}\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Character/\hyperlink{_character_8cpp}{Character.\+cpp}\end{DoxyCompactItemize}
