@@ -24,9 +24,9 @@ void Output::message( std::string message )
 }
 
 /**
-* 改行する文字列出力
-* @param message 出力する文字列
-*/
+ * 改行する文字列出力
+ * @param message 出力する文字列
+ */
 void Output::messageLine( std::string message )
 {
 	std::cout << message << std::endl;
