@@ -3,6 +3,9 @@
 #include <iostream>
 #include <string>
 
+/**
+ * •¶š—ño—ÍƒNƒ‰ƒX
+ */
 class Output
 {
 public:

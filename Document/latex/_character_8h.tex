@@ -1,0 +1,68 @@
+\hypertarget{_character_8h}{}\section{C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Character.h File Reference}
+\label{_character_8h}\index{C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Character.\+h@{C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Character.\+h}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cassert$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include \char`\"{}Chara\+Data.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_selection}{Selection}
+\item 
+class \hyperlink{class_character}{Character}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{class_character}{Character} $\ast$ $>$ \hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8}{Iff} \+: int \{ \hyperlink{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a696b031073e74bf2cb98e5ef201d4aa3}{Iff\+::\+U\+N\+K\+N\+O\+W\+N}, 
+\hyperlink{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a471e11502a3cc3a519644984935691e8}{Iff\+::\+F\+R\+I\+E\+N\+D}, 
+\hyperlink{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a47c87faef0716aa58d432391eca9d820}{Iff\+::\+F\+O\+E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} \hyperlink{_character_8h_a5ac9a1ff8916be75f0b563d5e9366bcb}{get\+Available\+Targets} (\hyperlink{class_character}{Character} $\ast$attacker, \hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} \&characters, std\+::string skill\+Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_character_8h_ac22f543a628d2695d0297c399b0272d8}{}\index{Character.\+h@{Character.\+h}!Chara\+List@{Chara\+List}}
+\index{Chara\+List@{Chara\+List}!Character.\+h@{Character.\+h}}
+\subsubsection[{Chara\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Character}$\ast$$>$ {\bf Chara\+List}}\label{_character_8h_ac22f543a628d2695d0297c399b0272d8}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8}{}\index{Character.\+h@{Character.\+h}!Iff@{Iff}}
+\index{Iff@{Iff}!Character.\+h@{Character.\+h}}
+\subsubsection[{Iff}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Iff} \+: int\hspace{0.3cm}{\ttfamily [strong]}}\label{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+N\+K\+N\+O\+W\+N@{U\+N\+K\+N\+O\+W\+N}!Character.\+h@{Character.\+h}}\index{Character.\+h@{Character.\+h}!U\+N\+K\+N\+O\+W\+N@{U\+N\+K\+N\+O\+W\+N}}\item[{\em 
+\hypertarget{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a696b031073e74bf2cb98e5ef201d4aa3}{}U\+N\+K\+N\+O\+W\+N\label{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a696b031073e74bf2cb98e5ef201d4aa3}
+}]\index{F\+R\+I\+E\+N\+D@{F\+R\+I\+E\+N\+D}!Character.\+h@{Character.\+h}}\index{Character.\+h@{Character.\+h}!F\+R\+I\+E\+N\+D@{F\+R\+I\+E\+N\+D}}\item[{\em 
+\hypertarget{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a471e11502a3cc3a519644984935691e8}{}F\+R\+I\+E\+N\+D\label{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a471e11502a3cc3a519644984935691e8}
+}]\index{F\+O\+E@{F\+O\+E}!Character.\+h@{Character.\+h}}\index{Character.\+h@{Character.\+h}!F\+O\+E@{F\+O\+E}}\item[{\em 
+\hypertarget{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a47c87faef0716aa58d432391eca9d820}{}F\+O\+E\label{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8a47c87faef0716aa58d432391eca9d820}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{_character_8h_a5ac9a1ff8916be75f0b563d5e9366bcb}{}\index{Character.\+h@{Character.\+h}!get\+Available\+Targets@{get\+Available\+Targets}}
+\index{get\+Available\+Targets@{get\+Available\+Targets}!Character.\+h@{Character.\+h}}
+\subsubsection[{get\+Available\+Targets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chara\+List} get\+Available\+Targets (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{attacker, }
+\item[{{\bf Chara\+List} \&}]{characters, }
+\item[{std\+::string}]{skill\+Name}
+\end{DoxyParamCaption}
+)}\label{_character_8h_a5ac9a1ff8916be75f0b563d5e9366bcb}
