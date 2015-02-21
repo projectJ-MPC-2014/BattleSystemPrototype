@@ -171,7 +171,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a55ee12bd3ec2b766fb3cbe20c3333fe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_selection.html">Selection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a55ee12bd3ec2b766fb3cbe20c3333fe6">selection_m</a></td></tr>
 <tr class="separator:a55ee12bd3ec2b766fb3cbe20c3333fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>キャラクタの情報がまとめられている スキルごとに計算をするメソッドを持つ リファクタリングが必要 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abcabc54ae5d60699204c5db2484fc116"></a>
 <div class="memitem">
 <div class="memproto">
@@ -201,6 +203,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>コンストラクタ キャラクタの情報を設定する </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>キャラクタ名 </td></tr>
+    <tr><td class="paramname">data</td><td>キャラクタの数値データ </td></tr>
+    <tr><td class="paramname">id</td><td>キャラクタID </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -224,6 +234,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>デストラクタ </p>
 
 </div>
 </div>
@@ -241,6 +252,12 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>物理攻撃をする関数 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>攻撃対象 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -257,6 +274,12 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>相手を回復をする関数 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>回復対象 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -281,6 +304,12 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>ダメージを受ける関数 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">damage</td><td>受けるダメージ(体力から引く量) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -296,6 +325,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>キャラクタの敵味方情報を得る </p><dl class="section return"><dt>Returns</dt><dd>敵味方識別列挙定数 </dd></dl>
 
 </div>
 </div>
@@ -311,6 +341,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>キャラクタの行動を得る関数 TestBattleのtestAttackで呼ばれる </p>
 
 </div>
 </div>
@@ -335,6 +366,12 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>自分が回復する関数 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heal</td><td>回復量 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -351,6 +388,12 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>魔法攻撃をする関数 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>攻撃対象 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -367,6 +410,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>キャラクタの行動選択をセットする </p>
 
 </div>
 </div>
@@ -380,6 +424,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>キャラクタのデータ </p>
 
 </div>
 </div>
@@ -392,6 +437,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>キャラクタID </p>
 
 </div>
 </div>
@@ -412,6 +458,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>プレイヤにとって敵か味方か </p>
 
 </div>
 </div>
@@ -424,6 +471,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>キャラクタ名 </p>
 
 </div>
 </div>
@@ -444,6 +492,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>選択された行動 </p>
 
 </div>
 </div>
@@ -457,7 +506,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_character.html">Character</a></li>
-    <li class="footer">Generated on Thu Feb 19 2015 22:17:52 for BattleSystemPrototype by
+    <li class="footer">Generated on Sat Feb 21 2015 19:27:17 for BattleSystemPrototype by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

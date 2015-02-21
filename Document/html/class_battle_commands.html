@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('class_battle_commands.html','');});
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_battle_commands-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -125,19 +126,24 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c466c46c4b4884c34502d9ac976846e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_commands.html#a2c466c46c4b4884c34502d9ac976846e">BattleCommands</a> ()</td></tr>
-<tr class="separator:a2c466c46c4b4884c34502d9ac976846e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74617b7c7d0ea2211f7e5236171b6ca6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_commands.html#a74617b7c7d0ea2211f7e5236171b6ca6">~BattleCommands</a> ()</td></tr>
-<tr class="separator:a74617b7c7d0ea2211f7e5236171b6ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e326bb12b3895ee69ce6120811f6d2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_commands.html#a7e326bb12b3895ee69ce6120811f6d2a">BattleCommands</a> ()=default</td></tr>
+<tr class="separator:a7e326bb12b3895ee69ce6120811f6d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58510d9aa1c4a2f14c35c095e32f212"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_commands.html#aa58510d9aa1c4a2f14c35c095e32f212">~BattleCommands</a> ()=default</td></tr>
+<tr class="separator:aa58510d9aa1c4a2f14c35c095e32f212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a545df551d5dd5ec5212a4c2d32a125e9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_commands.html#a545df551d5dd5ec5212a4c2d32a125e9">getNumOfCommands</a> ()</td></tr>
+<tr class="separator:a545df551d5dd5ec5212a4c2d32a125e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad187150249ca899f0f6cd16cd8052d0f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_battle_commands.html#ad7112c7a7d768a36302631667bd62b17">Commands</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_commands.html#ad187150249ca899f0f6cd16cd8052d0f">COMMANDS_m</a> = { &quot;attack&quot;, &quot;magic&quot;, &quot;care&quot; }</td></tr>
 <tr class="separator:ad187150249ca899f0f6cd16cd8052d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdec7871d4e52ef80316212c49c80dcd"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_commands.html#afdec7871d4e52ef80316212c49c80dcd">NUMBER_OF_COMMANDS_m</a> = 3</td></tr>
-<tr class="separator:afdec7871d4e52ef80316212c49c80dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>コマンドの集合 コマンドの種類を全てまとめたクラス </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ad7112c7a7d768a36302631667bd62b17"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,13 +153,17 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>コマンドの集合の型 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2c466c46c4b4884c34502d9ac976846e"></a>
+<a class="anchor" id="a7e326bb12b3895ee69ce6120811f6d2a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">BattleCommands::BattleCommands </td>
@@ -162,13 +172,22 @@ Static Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<p>コンストラクタ </p>
 
 </div>
 </div>
-<a class="anchor" id="a74617b7c7d0ea2211f7e5236171b6ca6"></a>
+<a class="anchor" id="aa58510d9aa1c4a2f14c35c095e32f212"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">BattleCommands::~BattleCommands </td>
@@ -177,7 +196,38 @@ Static Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<p>デストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a545df551d5dd5ec5212a4c2d32a125e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int BattleCommands::getNumOfCommands </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>コマンドの種類数を返す return コマンドの種類数 </p>
 
 </div>
 </div>
@@ -199,26 +249,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afdec7871d4e52ef80316212c49c80dcd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int BattleCommands::NUMBER_OF_COMMANDS_m = 3</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>コマンドの集合 </p>
 
 </div>
 </div>
@@ -232,7 +263,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_battle_commands.html">BattleCommands</a></li>
-    <li class="footer">Generated on Thu Feb 19 2015 22:17:52 for BattleSystemPrototype by
+    <li class="footer">Generated on Sat Feb 21 2015 19:27:17 for BattleSystemPrototype by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

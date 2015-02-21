@@ -54,6 +54,9 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+キャラクタの情報がまとめられている スキルごとに計算をするメソッドを持つ リファクタリングが必要 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_character_abcabc54ae5d60699204c5db2484fc116}{}\index{Character@{Character}!Character@{Character}}
 \index{Character@{Character}!Character@{Character}}
@@ -64,6 +67,15 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \item[{int}]{id}
 \end{DoxyParamCaption}
 )}\label{class_character_abcabc54ae5d60699204c5db2484fc116}
+コンストラクタ キャラクタの情報を設定する 
+\begin{DoxyParams}{Parameters}
+{\em name} & キャラクタ名 \\
+\hline
+{\em data} & キャラクタの数値データ \\
+\hline
+{\em id} & キャラクタ\+I\+D \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_character_a3333a88ae593c36b229c90371e935d42}{}\index{Character@{Character}!````~Character@{$\sim$\+Character}}
 \index{````~Character@{$\sim$\+Character}!Character@{Character}}
 \subsubsection[{$\sim$\+Character}]{\setlength{\rightskip}{0pt plus 5cm}virtual Character\+::$\sim$\+Character (
@@ -71,7 +83,7 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\label{class_character_a3333a88ae593c36b229c90371e935d42}
-
+デストラクタ 
 
 \subsection{Member Function Documentation}
 \hypertarget{class_character_a459859c74ba468345de63f436ee4442b}{}\index{Character@{Character}!attack@{attack}}
@@ -81,6 +93,11 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \item[{{\bf Character} \&}]{target}
 \end{DoxyParamCaption}
 )}\label{class_character_a459859c74ba468345de63f436ee4442b}
+物理攻撃をする関数 
+\begin{DoxyParams}{Parameters}
+{\em target} & 攻撃対象 \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_character_a1933b175d4533053433422522da38181}{}\index{Character@{Character}!care@{care}}
 \index{care@{care}!Character@{Character}}
 \subsubsection[{care}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::care (
@@ -88,6 +105,11 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \item[{{\bf Character} \&}]{target}
 \end{DoxyParamCaption}
 )}\label{class_character_a1933b175d4533053433422522da38181}
+相手を回復をする関数 
+\begin{DoxyParams}{Parameters}
+{\em target} & 回復対象 \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_character_a611be438cc7a4fa5b9b4d50236a2966b}{}\index{Character@{Character}!damage@{damage}}
 \index{damage@{damage}!Character@{Character}}
 \subsubsection[{damage}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::damage (
@@ -95,6 +117,11 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \item[{int}]{damage}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a611be438cc7a4fa5b9b4d50236a2966b}
+ダメージを受ける関数 
+\begin{DoxyParams}{Parameters}
+{\em damage} & 受けるダメージ(体力から引く量) \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_character_aa2766fd908e56f386c6a946c9cde4c5d}{}\index{Character@{Character}!get\+Iff@{get\+Iff}}
 \index{get\+Iff@{get\+Iff}!Character@{Character}}
 \subsubsection[{get\+Iff}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iff} Character\+::get\+Iff (
@@ -102,6 +129,9 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 {}
 \end{DoxyParamCaption}
 )}\label{class_character_aa2766fd908e56f386c6a946c9cde4c5d}
+キャラクタの敵味方情報を得る \begin{DoxyReturn}{Returns}
+敵味方識別列挙定数 
+\end{DoxyReturn}
 \hypertarget{class_character_a854b7c44f252ed1c8456112ca2bee9a1}{}\index{Character@{Character}!get\+Selection@{get\+Selection}}
 \index{get\+Selection@{get\+Selection}!Character@{Character}}
 \subsubsection[{get\+Selection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Character\+::get\+Selection (
@@ -109,13 +139,18 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 {}
 \end{DoxyParamCaption}
 )}\label{class_character_a854b7c44f252ed1c8456112ca2bee9a1}
-\hypertarget{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{}\index{Character@{Character}!heal@{heal}}
+キャラクタの行動を得る関数 Test\+Battleのtest\+Attackで呼ばれる \hypertarget{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{}\index{Character@{Character}!heal@{heal}}
 \index{heal@{heal}!Character@{Character}}
 \subsubsection[{heal}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::heal (
 \begin{DoxyParamCaption}
 \item[{int}]{heal}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}
+自分が回復する関数 
+\begin{DoxyParams}{Parameters}
+{\em heal} & 回復量 \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_character_a04eee23fbdb9c13b806d6ff0d9131c04}{}\index{Character@{Character}!magic@{magic}}
 \index{magic@{magic}!Character@{Character}}
 \subsubsection[{magic}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::magic (
@@ -123,6 +158,11 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \item[{{\bf Character} \&}]{target}
 \end{DoxyParamCaption}
 )}\label{class_character_a04eee23fbdb9c13b806d6ff0d9131c04}
+魔法攻撃をする関数 
+\begin{DoxyParams}{Parameters}
+{\em target} & 攻撃対象 \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_character_ab209a191029576ff3f4ae2cc136733bf}{}\index{Character@{Character}!select@{select}}
 \index{select@{select}!Character@{Character}}
 \subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::select (
@@ -130,25 +170,25 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 \item[{{\bf Selection} const \&}]{selection}
 \end{DoxyParamCaption}
 )}\label{class_character_ab209a191029576ff3f4ae2cc136733bf}
-
+キャラクタの行動選択をセットする 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_character_abdd384831f34238538de88709016afe8}{}\index{Character@{Character}!data\+\_\+m@{data\+\_\+m}}
 \index{data\+\_\+m@{data\+\_\+m}!Character@{Character}}
 \subsubsection[{data\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chara\+Data} Character\+::data\+\_\+m}\label{class_character_abdd384831f34238538de88709016afe8}
-\hypertarget{class_character_a5e51ea77e9178ae99a33901300e4bc40}{}\index{Character@{Character}!id\+\_\+m@{id\+\_\+m}}
+キャラクタのデータ \hypertarget{class_character_a5e51ea77e9178ae99a33901300e4bc40}{}\index{Character@{Character}!id\+\_\+m@{id\+\_\+m}}
 \index{id\+\_\+m@{id\+\_\+m}!Character@{Character}}
 \subsubsection[{id\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}int Character\+::id\+\_\+m}\label{class_character_a5e51ea77e9178ae99a33901300e4bc40}
-\hypertarget{class_character_a2ca852f598c4e20b5d932355379c4ac0}{}\index{Character@{Character}!iff\+\_\+m@{iff\+\_\+m}}
+キャラクタ\+I\+D \hypertarget{class_character_a2ca852f598c4e20b5d932355379c4ac0}{}\index{Character@{Character}!iff\+\_\+m@{iff\+\_\+m}}
 \index{iff\+\_\+m@{iff\+\_\+m}!Character@{Character}}
 \subsubsection[{iff\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iff} Character\+::iff\+\_\+m\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a2ca852f598c4e20b5d932355379c4ac0}
-\hypertarget{class_character_ae84b80fb6ac2e9271506c84b71d657f6}{}\index{Character@{Character}!name\+\_\+m@{name\+\_\+m}}
+プレイヤにとって敵か味方か \hypertarget{class_character_ae84b80fb6ac2e9271506c84b71d657f6}{}\index{Character@{Character}!name\+\_\+m@{name\+\_\+m}}
 \index{name\+\_\+m@{name\+\_\+m}!Character@{Character}}
 \subsubsection[{name\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Character\+::name\+\_\+m}\label{class_character_ae84b80fb6ac2e9271506c84b71d657f6}
-\hypertarget{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}{}\index{Character@{Character}!selection\+\_\+m@{selection\+\_\+m}}
+キャラクタ名 \hypertarget{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}{}\index{Character@{Character}!selection\+\_\+m@{selection\+\_\+m}}
 \index{selection\+\_\+m@{selection\+\_\+m}!Character@{Character}}
 \subsubsection[{selection\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Character\+::selection\+\_\+m\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}
-
+選択された行動 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

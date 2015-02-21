@@ -27,19 +27,20 @@ int \hyperlink{class_random_selector_ab5d7b7d795cdae3f329484c1d305e9e1}{select} 
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::random\+\_\+device \hyperlink{class_random_selector_a0d02d545b4b26df31510b9ab238bbc0c}{seed\+\_\+m}
-\item 
 std\+::mt19937 \hyperlink{class_random_selector_a141cf5ff4752ece62b71a880501601b3}{engine\+\_\+m}
 \item 
 \hyperlink{class_random_selector_aa19efc61b8b330971db574f39e4f623b}{Dist} \hyperlink{class_random_selector_adbb8b79d964616048efb5554da2eb561}{random\+\_\+m}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+乱数でキャラクタの行動を決定するクラス 
+
 \subsection{Member Typedef Documentation}
 \hypertarget{class_random_selector_aa19efc61b8b330971db574f39e4f623b}{}\index{Random\+Selector@{Random\+Selector}!Dist@{Dist}}
 \index{Dist@{Dist}!Random\+Selector@{Random\+Selector}}
 \subsubsection[{Dist}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::uniform\+\_\+int\+\_\+distribution {\bf Random\+Selector\+::\+Dist}}\label{class_random_selector_aa19efc61b8b330971db574f39e4f623b}
-
+一様分布の型 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_random_selector_a9711b846989394963835acfd4da8b7aa}{}\index{Random\+Selector@{Random\+Selector}!Random\+Selector@{Random\+Selector}}
@@ -49,14 +50,14 @@ std\+::mt19937 \hyperlink{class_random_selector_a141cf5ff4752ece62b71a880501601b
 {}
 \end{DoxyParamCaption}
 )}\label{class_random_selector_a9711b846989394963835acfd4da8b7aa}
-\hypertarget{class_random_selector_a19c6e54d2055c7e317c128e1d8c72ffe}{}\index{Random\+Selector@{Random\+Selector}!````~Random\+Selector@{$\sim$\+Random\+Selector}}
+コンストラクタ 連数エンジンのシードを設定する \hypertarget{class_random_selector_a19c6e54d2055c7e317c128e1d8c72ffe}{}\index{Random\+Selector@{Random\+Selector}!````~Random\+Selector@{$\sim$\+Random\+Selector}}
 \index{````~Random\+Selector@{$\sim$\+Random\+Selector}!Random\+Selector@{Random\+Selector}}
 \subsubsection[{$\sim$\+Random\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}Random\+Selector\+::$\sim$\+Random\+Selector (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [default]}}\label{class_random_selector_a19c6e54d2055c7e317c128e1d8c72ffe}
-
+デストラクタ 
 
 \subsection{Member Function Documentation}
 \hypertarget{class_random_selector_ab5d7b7d795cdae3f329484c1d305e9e1}{}\index{Random\+Selector@{Random\+Selector}!select@{select}}
@@ -67,7 +68,7 @@ std\+::mt19937 \hyperlink{class_random_selector_a141cf5ff4752ece62b71a880501601b
 \item[{{\bf Chara\+List}}]{characters}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_random_selector_ab5d7b7d795cdae3f329484c1d305e9e1}
-指定されたキャラクターの行動を選択する 
+指定されたキャラクターの行動を乱数で選択する 
 \begin{DoxyParams}{Parameters}
 {\em attacker} & 攻撃者 \\
 \hline
@@ -87,13 +88,10 @@ Implements \hyperlink{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{Selector
 \hypertarget{class_random_selector_a141cf5ff4752ece62b71a880501601b3}{}\index{Random\+Selector@{Random\+Selector}!engine\+\_\+m@{engine\+\_\+m}}
 \index{engine\+\_\+m@{engine\+\_\+m}!Random\+Selector@{Random\+Selector}}
 \subsubsection[{engine\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mt19937 Random\+Selector\+::engine\+\_\+m}\label{class_random_selector_a141cf5ff4752ece62b71a880501601b3}
-\hypertarget{class_random_selector_adbb8b79d964616048efb5554da2eb561}{}\index{Random\+Selector@{Random\+Selector}!random\+\_\+m@{random\+\_\+m}}
+連数生成のエンジン \hypertarget{class_random_selector_adbb8b79d964616048efb5554da2eb561}{}\index{Random\+Selector@{Random\+Selector}!random\+\_\+m@{random\+\_\+m}}
 \index{random\+\_\+m@{random\+\_\+m}!Random\+Selector@{Random\+Selector}}
 \subsubsection[{random\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dist} Random\+Selector\+::random\+\_\+m}\label{class_random_selector_adbb8b79d964616048efb5554da2eb561}
-\hypertarget{class_random_selector_a0d02d545b4b26df31510b9ab238bbc0c}{}\index{Random\+Selector@{Random\+Selector}!seed\+\_\+m@{seed\+\_\+m}}
-\index{seed\+\_\+m@{seed\+\_\+m}!Random\+Selector@{Random\+Selector}}
-\subsubsection[{seed\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}std\+::random\+\_\+device Random\+Selector\+::seed\+\_\+m}\label{class_random_selector_a0d02d545b4b26df31510b9ab238bbc0c}
-
+一様分布の乱数 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['_7ebattlecommands',['~BattleCommands',['../class_battle_commands.html#a74617b7c7d0ea2211f7e5236171b6ca6',1,'BattleCommands']]],
+  ['_7ebattlecommands',['~BattleCommands',['../class_battle_commands.html#aa58510d9aa1c4a2f14c35c095e32f212',1,'BattleCommands']]],
   ['_7echaracter',['~Character',['../class_character.html#a3333a88ae593c36b229c90371e935d42',1,'Character']]],
-  ['_7echaracterlist',['~CharacterList',['../class_character_list.html#a19f08c6c52dc48ad7fba7eefb57a8178',1,'CharacterList']]],
-  ['_7ecommandlist',['~CommandList',['../class_command_list.html#aada18ff9b6162b3ca25b9e4c28a05031',1,'CommandList']]],
+  ['_7echaracterlist',['~CharacterList',['../class_character_list.html#a064e19fd5fc81f44ab5d71215278c294',1,'CharacterList']]],
+  ['_7ecommandlist',['~CommandList',['../class_command_list.html#a0f107c1bba5f5ec16a1f350233bd5ddb',1,'CommandList']]],
   ['_7ecuiselector',['~CUISelector',['../class_c_u_i_selector.html#af877df609d41b74916971a0d45d325ca',1,'CUISelector']]],
   ['_7eenemy',['~Enemy',['../class_enemy.html#aca00fa2f20cea544f52beeb5aa1648f1',1,'Enemy']]],
   ['_7eoutput',['~Output',['../class_output.html#a61d0840daf98bea49e4dc471f235eeab',1,'Output']]],
