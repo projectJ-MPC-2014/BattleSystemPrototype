@@ -15,6 +15,7 @@ void TestBattle::testPrint( CharaList &characters )
 		}
 	};
 
+	//生きてるキャラクタのステイタスを表示
 	std::for_each( characters.begin(), characters.end(), printStatus );
 }
 
@@ -28,8 +29,10 @@ void TestBattle::testAttack( Character* attacker, CharaList &characters )
 		return character1->name_m == attacker->getSelection().target_m;
 	};
 
+	//スキルを適用する対象を見つける
 	Character &target = **std::find_if( characters.begin(), characters.end(), searchName );
 
+	//行動ごとの処理
 	if( skillName == "attack" ) {
 		attacker->attack( target );
 	}

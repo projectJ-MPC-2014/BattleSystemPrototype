@@ -2,7 +2,9 @@
 class CharacterList
 {
 public:
-	CharacterList();
-	~CharacterList();
+	/**コンストラクタ*/
+	CharacterList() = default;
+	/**デストラクタ*/
+	~CharacterList() = default;
 };
 

@@ -5,7 +5,7 @@
 #include "Selector.h"
 
 /**
- * コマンドをCUIから選択するクラス
+ * キャラクタの行動をCUIから選択するクラス
  */
 class CUISelector : public Selector
 {

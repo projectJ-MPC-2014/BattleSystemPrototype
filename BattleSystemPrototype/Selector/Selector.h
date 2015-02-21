@@ -3,7 +3,7 @@
 #include "../Character/Character.h"
 
 /**
- * コマンドを選択するクラス
+ * コマンドを選択するインターフェイス
  */
 class Selector
 {

@@ -2,7 +2,7 @@
 
 RandomSelector::RandomSelector()
 {
-	engine_m.seed( seed_m() );
+	engine_m.seed(std::random_device()());
 }
 
 int RandomSelector::select( Character *attacker, CharaList characters )
@@ -10,12 +10,9 @@ int RandomSelector::select( Character *attacker, CharaList characters )
 	std::string skillName;
 	std::string target;
 	
-	random_m.param( Dist::param_type( 0, BattleCommands::NUMBER_OF_COMMANDS_m - 1 ) );
+	random_m.param( Dist::param_type( 0, BattleCommands::getNumOfCommands() - 1 ) );
 	skillName = BattleCommands::COMMANDS_m[random_m( engine_m )];
 	std::cout << attacker->name_m << " の せんたく" << std::endl;
-
-	//選べるコマンド一覧を表示する
-
 	std::cout << "Command:";
 	std::cout << skillName << std::endl;
 
