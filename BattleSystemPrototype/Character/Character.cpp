@@ -6,6 +6,8 @@ CharaList getAvailableTargets(
 	std::string skillName )
 {
 	CharaList targets;
+
+	//コマンドごとに選択可能な攻撃相手を抽出したリストを返す
 	if( skillName == "attack" ) {
 		auto isEnemy = [attacker]( Character* enemy ){
 			return attacker->getIff() != enemy->getIff() &&
