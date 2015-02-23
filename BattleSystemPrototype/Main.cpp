@@ -13,8 +13,8 @@ int main(){
 	TestBattle battle;
 	CharaList characters = {
 		new Player("hero", { 100, 30, 30, 20, true }, 1),
-		new Enemy("enemy1", { 20, 20, 20, 10, true }, 1),
-		new Enemy("enemy2", { 30, 20, 30, 30, true }, 1),
+		new Enemy("enemy1", { 20, 20, 20, 10, true }, 2),
+		new Enemy("enemy2", { 30, 20, 30, 30, true }, 3),
 	};
 	
 	Selector *cuiSelector = new CUISelector();
