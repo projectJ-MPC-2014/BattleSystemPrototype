@@ -22,7 +22,7 @@ typedef std\+::uniform\+\_\+int\+\_\+distribution \hyperlink{class_random_select
 \item 
 \hyperlink{class_random_selector_a19c6e54d2055c7e317c128e1d8c72ffe}{$\sim$\+Random\+Selector} ()=default
 \item 
-int \hyperlink{class_random_selector_ab5d7b7d795cdae3f329484c1d305e9e1}{select} (\hyperlink{class_character}{Character} $\ast$attacker, \hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} characters)
+\hyperlink{struct_selection}{Selection} \hyperlink{class_random_selector_a3d7e78cf6cd4c2ec497d4ad984e39492}{select} (\hyperlink{class_character}{Character} $\ast$attacker, \hyperlink{class_character_list}{Character\+List} characters) override
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -60,14 +60,14 @@ std\+::mt19937 \hyperlink{class_random_selector_a141cf5ff4752ece62b71a880501601b
 デストラクタ 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_random_selector_ab5d7b7d795cdae3f329484c1d305e9e1}{}\index{Random\+Selector@{Random\+Selector}!select@{select}}
+\hypertarget{class_random_selector_a3d7e78cf6cd4c2ec497d4ad984e39492}{}\index{Random\+Selector@{Random\+Selector}!select@{select}}
 \index{select@{select}!Random\+Selector@{Random\+Selector}}
-\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}int Random\+Selector\+::select (
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Random\+Selector\+::select (
 \begin{DoxyParamCaption}
 \item[{{\bf Character} $\ast$}]{attacker, }
-\item[{{\bf Chara\+List}}]{characters}
+\item[{{\bf Character\+List}}]{characters}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_random_selector_ab5d7b7d795cdae3f329484c1d305e9e1}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_random_selector_a3d7e78cf6cd4c2ec497d4ad984e39492}
 指定されたキャラクターの行動を乱数で選択する 
 \begin{DoxyParams}{Parameters}
 {\em attacker} & 攻撃者 \\
@@ -80,7 +80,7 @@ std\+::mt19937 \hyperlink{class_random_selector_a141cf5ff4752ece62b71a880501601b
 \end{DoxyReturn}
 
 
-Implements \hyperlink{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{Selector}.
+Implements \hyperlink{class_selector_aaf09674f730fe58b1f79fb8a7c1b7274}{Selector}.
 
 
 

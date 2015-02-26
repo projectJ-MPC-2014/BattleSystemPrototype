@@ -111,41 +111,43 @@ $(document).ready(function(){initNavTree('_random_selector_8h_source.html','');}
 <a href="_random_selector_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_selector_8h.html">Selector.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../BattleCommands.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_selector_8h.html">Selector.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../BattleCommands.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_random_selector.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_random_selector.html">RandomSelector</a> :<span class="keyword">public</span> <a class="code" href="class_selector.html">Selector</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_random_selector.html#aa19efc61b8b330971db574f39e4f623b">   15</a></span>&#160;    <span class="keyword">typedef</span> std::uniform_int_distribution&lt;&gt; <a class="code" href="class_random_selector.html#aa19efc61b8b330971db574f39e4f623b">Dist</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_random_selector.html#a141cf5ff4752ece62b71a880501601b3">   17</a></span>&#160;    std::mt19937 <a class="code" href="class_random_selector.html#a141cf5ff4752ece62b71a880501601b3">engine_m</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_random_selector.html#adbb8b79d964616048efb5554da2eb561">   19</a></span>&#160;    Dist <a class="code" href="class_random_selector.html#adbb8b79d964616048efb5554da2eb561">random_m</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_random_selector.html#a9711b846989394963835acfd4da8b7aa">RandomSelector</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_random_selector.html#a19c6e54d2055c7e317c128e1d8c72ffe">~RandomSelector</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_random_selector.html#ab5d7b7d795cdae3f329484c1d305e9e1">select</a>( <a class="code" href="class_character.html">Character</a> *attacker, <a class="code" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a> characters );</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_random_selector.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_random_selector.html">RandomSelector</a> :<span class="keyword">public</span> <a class="code" href="class_selector.html">Selector</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_random_selector.html#aa19efc61b8b330971db574f39e4f623b">   16</a></span>&#160;    <span class="keyword">typedef</span> std::uniform_int_distribution&lt;&gt; <a class="code" href="class_random_selector.html#aa19efc61b8b330971db574f39e4f623b">Dist</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_random_selector.html#a141cf5ff4752ece62b71a880501601b3">   18</a></span>&#160;    std::mt19937 <a class="code" href="class_random_selector.html#a141cf5ff4752ece62b71a880501601b3">engine_m</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_random_selector.html#adbb8b79d964616048efb5554da2eb561">   20</a></span>&#160;    Dist <a class="code" href="class_random_selector.html#adbb8b79d964616048efb5554da2eb561">random_m</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_random_selector.html#a9711b846989394963835acfd4da8b7aa">RandomSelector</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_random_selector.html#a19c6e54d2055c7e317c128e1d8c72ffe">~RandomSelector</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="struct_selection.html">Selection</a> <a class="code" href="class_random_selector.html#a3d7e78cf6cd4c2ec497d4ad984e39492">select</a>( <a class="code" href="class_character.html">Character</a> *attacker, <a class="code" href="class_character_list.html">CharacterList</a> characters )<span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="ttc" id="class_random_selector_html_a19c6e54d2055c7e317c128e1d8c72ffe"><div class="ttname"><a href="class_random_selector.html#a19c6e54d2055c7e317c128e1d8c72ffe">RandomSelector::~RandomSelector</a></div><div class="ttdeci">~RandomSelector()=default</div></div>
-<div class="ttc" id="_character_8h_html_ac22f543a628d2695d0297c399b0272d8"><div class="ttname"><a href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a></div><div class="ttdeci">std::list&lt; Character * &gt; CharaList</div><div class="ttdef"><b>Definition:</b> Character.h:38</div></div>
-<div class="ttc" id="class_random_selector_html_adbb8b79d964616048efb5554da2eb561"><div class="ttname"><a href="class_random_selector.html#adbb8b79d964616048efb5554da2eb561">RandomSelector::random_m</a></div><div class="ttdeci">Dist random_m</div><div class="ttdef"><b>Definition:</b> RandomSelector.h:19</div></div>
-<div class="ttc" id="class_random_selector_html_aa19efc61b8b330971db574f39e4f623b"><div class="ttname"><a href="class_random_selector.html#aa19efc61b8b330971db574f39e4f623b">RandomSelector::Dist</a></div><div class="ttdeci">std::uniform_int_distribution Dist</div><div class="ttdef"><b>Definition:</b> RandomSelector.h:15</div></div>
-<div class="ttc" id="class_random_selector_html"><div class="ttname"><a href="class_random_selector.html">RandomSelector</a></div><div class="ttdef"><b>Definition:</b> RandomSelector.h:11</div></div>
-<div class="ttc" id="class_random_selector_html_a141cf5ff4752ece62b71a880501601b3"><div class="ttname"><a href="class_random_selector.html#a141cf5ff4752ece62b71a880501601b3">RandomSelector::engine_m</a></div><div class="ttdeci">std::mt19937 engine_m</div><div class="ttdef"><b>Definition:</b> RandomSelector.h:17</div></div>
-<div class="ttc" id="class_character_html"><div class="ttname"><a href="class_character.html">Character</a></div><div class="ttdef"><b>Definition:</b> Character.h:58</div></div>
+<div class="ttc" id="struct_selection_html"><div class="ttname"><a href="struct_selection.html">Selection</a></div><div class="ttdef"><b>Definition:</b> Selection.h:9</div></div>
+<div class="ttc" id="class_random_selector_html_adbb8b79d964616048efb5554da2eb561"><div class="ttname"><a href="class_random_selector.html#adbb8b79d964616048efb5554da2eb561">RandomSelector::random_m</a></div><div class="ttdeci">Dist random_m</div><div class="ttdef"><b>Definition:</b> RandomSelector.h:20</div></div>
+<div class="ttc" id="class_random_selector_html_a3d7e78cf6cd4c2ec497d4ad984e39492"><div class="ttname"><a href="class_random_selector.html#a3d7e78cf6cd4c2ec497d4ad984e39492">RandomSelector::select</a></div><div class="ttdeci">Selection select(Character *attacker, CharacterList characters) override</div><div class="ttdef"><b>Definition:</b> RandomSelector.cpp:8</div></div>
+<div class="ttc" id="class_random_selector_html_aa19efc61b8b330971db574f39e4f623b"><div class="ttname"><a href="class_random_selector.html#aa19efc61b8b330971db574f39e4f623b">RandomSelector::Dist</a></div><div class="ttdeci">std::uniform_int_distribution Dist</div><div class="ttdef"><b>Definition:</b> RandomSelector.h:16</div></div>
+<div class="ttc" id="class_random_selector_html"><div class="ttname"><a href="class_random_selector.html">RandomSelector</a></div><div class="ttdef"><b>Definition:</b> RandomSelector.h:12</div></div>
+<div class="ttc" id="class_random_selector_html_a141cf5ff4752ece62b71a880501601b3"><div class="ttname"><a href="class_random_selector.html#a141cf5ff4752ece62b71a880501601b3">RandomSelector::engine_m</a></div><div class="ttdeci">std::mt19937 engine_m</div><div class="ttdef"><b>Definition:</b> RandomSelector.h:18</div></div>
+<div class="ttc" id="class_character_html"><div class="ttname"><a href="class_character.html">Character</a></div><div class="ttdef"><b>Definition:</b> Character.h:18</div></div>
 <div class="ttc" id="class_random_selector_html_a9711b846989394963835acfd4da8b7aa"><div class="ttname"><a href="class_random_selector.html#a9711b846989394963835acfd4da8b7aa">RandomSelector::RandomSelector</a></div><div class="ttdeci">RandomSelector()</div><div class="ttdef"><b>Definition:</b> RandomSelector.cpp:3</div></div>
-<div class="ttc" id="class_random_selector_html_ab5d7b7d795cdae3f329484c1d305e9e1"><div class="ttname"><a href="class_random_selector.html#ab5d7b7d795cdae3f329484c1d305e9e1">RandomSelector::select</a></div><div class="ttdeci">int select(Character *attacker, CharaList characters)</div><div class="ttdef"><b>Definition:</b> RandomSelector.cpp:8</div></div>
+<div class="ttc" id="class_character_list_html"><div class="ttname"><a href="class_character_list.html">CharacterList</a></div><div class="ttdef"><b>Definition:</b> CharacterList.h:12</div></div>
 <div class="ttc" id="_selector_8h_html"><div class="ttname"><a href="_selector_8h.html">Selector.h</a></div></div>
-<div class="ttc" id="class_selector_html"><div class="ttname"><a href="class_selector.html">Selector</a></div><div class="ttdef"><b>Definition:</b> Selector.h:8</div></div>
+<div class="ttc" id="class_selector_html"><div class="ttname"><a href="class_selector.html">Selector</a></div><div class="ttdef"><b>Definition:</b> Selector.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_27aecf8cdee1280e323e346c83b3ed08.html">BattleSystemPrototype</a></li><li class="navelem"><a class="el" href="dir_722994300ea4bac9958f19534687c390.html">Selector</a></li><li class="navelem"><a class="el" href="_random_selector_8h.html">RandomSelector.h</a></li>
-    <li class="footer">Generated on Sat Feb 21 2015 19:27:17 for BattleSystemPrototype by
+    <li class="footer">Generated on Thu Feb 26 2015 17:26:48 for BattleSystemPrototype by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

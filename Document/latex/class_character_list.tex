@@ -4,32 +4,115 @@
 
 {\ttfamily \#include $<$Character\+List.\+h$>$}
 
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{class_character}{Character} $\ast$ $>$\+::\hyperlink{class_character_list_ae35338287a6cc6ee2e7c4b78f310d9f9}{iterator} \hyperlink{class_character_list_ae35338287a6cc6ee2e7c4b78f310d9f9}{iterator}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_character_list_a61fb5a7b18b64f5f82f2e1a7652e1bc6}{Character\+List} ()=default
+\hyperlink{class_character_list}{Character\+List} \hyperlink{class_character_list_a5b91b4cb88c2aea3a01d38a5c9c0cd8c}{get\+Available\+Targets} (\hyperlink{class_character}{Character} $\ast$actor, std\+::string action)
 \item 
-\hyperlink{class_character_list_a064e19fd5fc81f44ab5d71215278c294}{$\sim$\+Character\+List} ()=default
+void \hyperlink{class_character_list_aa57091b62166c958992cdf50bf3918c4}{sort} ()
+\item 
+void \hyperlink{class_character_list_a31af65cd57dc3b6291a1dc2d00a6b100}{insert} (\hyperlink{class_character}{Character} $\ast$character)
+\item 
+\hyperlink{class_character_list_ae35338287a6cc6ee2e7c4b78f310d9f9}{iterator} \hyperlink{class_character_list_a3f33d64e8d14d4902864c62adc8a850b}{begin} ()
+\item 
+\hyperlink{class_character_list_ae35338287a6cc6ee2e7c4b78f310d9f9}{iterator} \hyperlink{class_character_list_a2727c01ea4dba85daa568dcacd0aebd9}{end} ()
+\item 
+{\footnotesize template$<$typename Condition $>$ }\\\hyperlink{class_character}{Character} $\ast$ \hyperlink{class_character_list_a11abf578cb86b393a3044c491f5a9938}{find\+If} (Condition condition)
+\item 
+size\+\_\+t \hyperlink{class_character_list_a2c075299a05cd62be318defab063bd42}{size} () const 
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_character_list_a61fb5a7b18b64f5f82f2e1a7652e1bc6}{}\index{Character\+List@{Character\+List}!Character\+List@{Character\+List}}
-\index{Character\+List@{Character\+List}!Character\+List@{Character\+List}}
-\subsubsection[{Character\+List}]{\setlength{\rightskip}{0pt plus 5cm}Character\+List\+::\+Character\+List (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [default]}}\label{class_character_list_a61fb5a7b18b64f5f82f2e1a7652e1bc6}
-コンストラクタ \hypertarget{class_character_list_a064e19fd5fc81f44ab5d71215278c294}{}\index{Character\+List@{Character\+List}!````~Character\+List@{$\sim$\+Character\+List}}
-\index{````~Character\+List@{$\sim$\+Character\+List}!Character\+List@{Character\+List}}
-\subsubsection[{$\sim$\+Character\+List}]{\setlength{\rightskip}{0pt plus 5cm}Character\+List\+::$\sim$\+Character\+List (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [default]}}\label{class_character_list_a064e19fd5fc81f44ab5d71215278c294}
-デストラクタ 
+\subsection{Detailed Description}
+キャラクタをリストでまとめたラッパクラス 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\subsection{Member Typedef Documentation}
+\hypertarget{class_character_list_ae35338287a6cc6ee2e7c4b78f310d9f9}{}\index{Character\+List@{Character\+List}!iterator@{iterator}}
+\index{iterator@{iterator}!Character\+List@{Character\+List}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Character}$\ast$$>$\+::{\bf iterator} {\bf Character\+List\+::iterator}}\label{class_character_list_ae35338287a6cc6ee2e7c4b78f310d9f9}
+イテレータの型 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_character_list_a3f33d64e8d14d4902864c62adc8a850b}{}\index{Character\+List@{Character\+List}!begin@{begin}}
+\index{begin@{begin}!Character\+List@{Character\+List}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Character\+List\+::iterator} Character\+List\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_character_list_a3f33d64e8d14d4902864c62adc8a850b}
+先頭のイテレータを返す \begin{DoxyReturn}{Returns}
+先頭のイテレータ 
+\end{DoxyReturn}
+\hypertarget{class_character_list_a2727c01ea4dba85daa568dcacd0aebd9}{}\index{Character\+List@{Character\+List}!end@{end}}
+\index{end@{end}!Character\+List@{Character\+List}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Character\+List\+::iterator} Character\+List\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_character_list_a2727c01ea4dba85daa568dcacd0aebd9}
+末尾のイテレータを返す \begin{DoxyReturn}{Returns}
+末尾のイテレータ 
+\end{DoxyReturn}
+\hypertarget{class_character_list_a11abf578cb86b393a3044c491f5a9938}{}\index{Character\+List@{Character\+List}!find\+If@{find\+If}}
+\index{find\+If@{find\+If}!Character\+List@{Character\+List}}
+\subsubsection[{find\+If}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Condition $>$ {\bf Character}$\ast$ Character\+List\+::find\+If (
+\begin{DoxyParamCaption}
+\item[{Condition}]{condition}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_character_list_a11abf578cb86b393a3044c491f5a9938}
+条件を満たすキャラクタを検索してキャラクタクラスのポインタを返す  条件(関数オブジェクト) \begin{DoxyReturn}{Returns}
+条件を満たすキャラクタが見つからない時 nullptr, 見つかった時 そのキャラクタへのポインタ 
+\end{DoxyReturn}
+\hypertarget{class_character_list_a5b91b4cb88c2aea3a01d38a5c9c0cd8c}{}\index{Character\+List@{Character\+List}!get\+Available\+Targets@{get\+Available\+Targets}}
+\index{get\+Available\+Targets@{get\+Available\+Targets}!Character\+List@{Character\+List}}
+\subsubsection[{get\+Available\+Targets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Character\+List} Character\+List\+::get\+Available\+Targets (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{actor, }
+\item[{std\+::string}]{action}
+\end{DoxyParamCaption}
+)}\label{class_character_list_a5b91b4cb88c2aea3a01d38a5c9c0cd8c}
+選択可能な対象(スキルを適用できる)のリストを得る関数 
+\begin{DoxyParams}{Parameters}
+{\em actor} & 行動するキャラクタ \\
+\hline
+{\em action} & actorが選択したスキルの名前 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+スキルを適用できるキャラクタのリスト 
+\end{DoxyReturn}
+\hypertarget{class_character_list_a31af65cd57dc3b6291a1dc2d00a6b100}{}\index{Character\+List@{Character\+List}!insert@{insert}}
+\index{insert@{insert}!Character\+List@{Character\+List}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+List\+::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{character}
+\end{DoxyParamCaption}
+)}\label{class_character_list_a31af65cd57dc3b6291a1dc2d00a6b100}
+リストにキャラクタを挿入する \hypertarget{class_character_list_a2c075299a05cd62be318defab063bd42}{}\index{Character\+List@{Character\+List}!size@{size}}
+\index{size@{size}!Character\+List@{Character\+List}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Character\+List\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_list_a2c075299a05cd62be318defab063bd42}
+リストの要素数を返す \begin{DoxyReturn}{Returns}
+リストの要素数 
+\end{DoxyReturn}
+\hypertarget{class_character_list_aa57091b62166c958992cdf50bf3918c4}{}\index{Character\+List@{Character\+List}!sort@{sort}}
+\index{sort@{sort}!Character\+List@{Character\+List}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+List\+::sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_character_list_aa57091b62166c958992cdf50bf3918c4}
+素早い順に並び替える 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Character/\hyperlink{_character_list_8h}{Character\+List.\+h}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\hyperlink{_character_list_8h}{Character\+List.\+h}\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\hyperlink{_character_list_8cpp}{Character\+List.\+cpp}\end{DoxyCompactItemize}

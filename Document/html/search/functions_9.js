@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['player',['Player',['../class_player.html#ac67c2c665f202dd5a8d69eb4b7c39901',1,'Player']]]
+  ['nullselection',['nullSelection',['../struct_selection.html#ac6354c46eb8f69fe42f8dabcecd9ab41',1,'Selection']]]
 ];

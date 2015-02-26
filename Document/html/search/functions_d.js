@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['_7ebattlecommands',['~BattleCommands',['../class_battle_commands.html#aa58510d9aa1c4a2f14c35c095e32f212',1,'BattleCommands']]],
-  ['_7echaracter',['~Character',['../class_character.html#a3333a88ae593c36b229c90371e935d42',1,'Character']]],
-  ['_7echaracterlist',['~CharacterList',['../class_character_list.html#a064e19fd5fc81f44ab5d71215278c294',1,'CharacterList']]],
-  ['_7ecommandlist',['~CommandList',['../class_command_list.html#a0f107c1bba5f5ec16a1f350233bd5ddb',1,'CommandList']]],
-  ['_7ecuiselector',['~CUISelector',['../class_c_u_i_selector.html#af877df609d41b74916971a0d45d325ca',1,'CUISelector']]],
-  ['_7eenemy',['~Enemy',['../class_enemy.html#aca00fa2f20cea544f52beeb5aa1648f1',1,'Enemy']]],
-  ['_7eoutput',['~Output',['../class_output.html#a61d0840daf98bea49e4dc471f235eeab',1,'Output']]],
-  ['_7eplayer',['~Player',['../class_player.html#a40d3c47b65e9652c363a8fde41f7bbf5',1,'Player']]],
-  ['_7erandomselector',['~RandomSelector',['../class_random_selector.html#a19c6e54d2055c7e317c128e1d8c72ffe',1,'RandomSelector']]],
-  ['_7eselector',['~Selector',['../class_selector.html#aadde929b3590fb6d34ac9ec91333ce5c',1,'Selector']]],
-  ['_7etestbattle',['~TestBattle',['../class_test_battle.html#a6cc4b02705e2b488fab6ecc9d7a54ce9',1,'TestBattle']]]
+  ['satisfies',['satisfies',['../class_condition_of_target.html#a74d0f2d1449d798bd1ea410c9472a807',1,'ConditionOfTarget::satisfies()'],['../class_is_not_ally.html#a68d6f654a0ff96e60c4b3616c0b932f2',1,'IsNotAlly::satisfies()'],['../class_is_ally.html#a9537dc9a3912a8c5cf5d8950920e36f4',1,'IsAlly::satisfies()']]],
+  ['select',['select',['../class_c_u_i_selector.html#afde129d9728716f06ff405498e383eb9',1,'CUISelector::select()'],['../class_random_selector.html#a3d7e78cf6cd4c2ec497d4ad984e39492',1,'RandomSelector::select()'],['../class_selector.html#aaf09674f730fe58b1f79fb8a7c1b7274',1,'Selector::select()']]],
+  ['selector',['Selector',['../class_selector.html#aa0ad3d8a77d1fc05b5c63154f3ce9e12',1,'Selector']]],
+  ['size',['size',['../class_character_list.html#a2c075299a05cd62be318defab063bd42',1,'CharacterList']]],
+  ['sort',['sort',['../class_character_list.html#aa57091b62166c958992cdf50bf3918c4',1,'CharacterList']]]
 ];

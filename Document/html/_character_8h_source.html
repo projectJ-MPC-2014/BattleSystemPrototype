@@ -109,95 +109,51 @@ $(document).ready(function(){initNavTree('_character_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="_character_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include&lt;cassert&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;list&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_chara_data_8h.html">CharaData.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8">   12</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8">Iff</a>:int  <span class="comment">//Identify friend or foe</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a>,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8a471e11502a3cc3a519644984935691e8">FRIEND</a>,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8a47c87faef0716aa58d432391eca9d820">FOE</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="class_character.html">Character</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_selection.html">   28</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_selection.html">Selection</a></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_selection.html#a8634426d66a52087240cffd66104d8b8">   31</a></span>&#160;    std::string <a class="code" href="struct_selection.html#a8634426d66a52087240cffd66104d8b8">skillName_m</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_selection.html#a1b21fefdc3fa3795f1c0a4701e9f8ee9">   33</a></span>&#160;    std::string <a class="code" href="struct_selection.html#a1b21fefdc3fa3795f1c0a4701e9f8ee9">target_m</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">   38</a></span>&#160;<span class="keyword">typedef</span> std::list&lt;Character*&gt; <a class="code" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a> <a class="code" href="_character_8h.html#a5ac9a1ff8916be75f0b563d5e9366bcb">getAvailableTargets</a>(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_character.html">Character</a>*attacker,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a> &amp;characters,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::string skillName );</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_character.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_character.html">Character</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_character.html#a2ca852f598c4e20b5d932355379c4ac0">   62</a></span>&#160;    <a class="code" href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8">Iff</a> <a class="code" href="class_character.html#a2ca852f598c4e20b5d932355379c4ac0">iff_m</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_character.html#a55ee12bd3ec2b766fb3cbe20c3333fe6">   64</a></span>&#160;    <a class="code" href="struct_selection.html">Selection</a> <a class="code" href="class_character.html#a55ee12bd3ec2b766fb3cbe20c3333fe6">selection_m</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_character.html#abdd384831f34238538de88709016afe8">   67</a></span>&#160;    <a class="code" href="struct_chara_data.html">CharaData</a> <a class="code" href="class_character.html#abdd384831f34238538de88709016afe8">data_m</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_character.html#ae84b80fb6ac2e9271506c84b71d657f6">   69</a></span>&#160;    std::string <a class="code" href="class_character.html#ae84b80fb6ac2e9271506c84b71d657f6">name_m</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_character.html#a5e51ea77e9178ae99a33901300e4bc40">   71</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_character.html#a5e51ea77e9178ae99a33901300e4bc40">id_m</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_character.html#abcabc54ae5d60699204c5db2484fc116">Character</a>(std::string name, <a class="code" href="struct_chara_data.html">CharaData</a> data, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_character.html#a3333a88ae593c36b229c90371e935d42">~Character</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_character.html#a611be438cc7a4fa5b9b4d50236a2966b">damage</a>(<span class="keywordtype">int</span> <a class="code" href="class_character.html#a611be438cc7a4fa5b9b4d50236a2966b">damage</a>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_character.html#a84c4b8b6ed92e7b373b36a3fc17f5bf5">heal</a>(<span class="keywordtype">int</span> <a class="code" href="class_character.html#a84c4b8b6ed92e7b373b36a3fc17f5bf5">heal</a>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_character.html#a04eee23fbdb9c13b806d6ff0d9131c04">magic</a>( <a class="code" href="class_character.html">Character</a> &amp;target );</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_character.html#a459859c74ba468345de63f436ee4442b">attack</a>(<a class="code" href="class_character.html">Character</a> &amp;target);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_character.html#a1933b175d4533053433422522da38181">care</a>( <a class="code" href="class_character.html">Character</a> &amp;target );</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="struct_selection.html">Selection</a> <a class="code" href="class_character.html#a854b7c44f252ed1c8456112ca2bee9a1">getSelection</a>();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_character.html#ab209a191029576ff3f4ae2cc136733bf">Character::select</a>( <a class="code" href="struct_selection.html">Selection</a> <span class="keyword">const</span> &amp;selection );</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8">Iff</a> <a class="code" href="class_character.html#aa2766fd908e56f386c6a946c9cde4c5d">getIff</a>();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="ttc" id="class_character_html_a5e51ea77e9178ae99a33901300e4bc40"><div class="ttname"><a href="class_character.html#a5e51ea77e9178ae99a33901300e4bc40">Character::id_m</a></div><div class="ttdeci">int id_m</div><div class="ttdef"><b>Definition:</b> Character.h:71</div></div>
-<div class="ttc" id="class_character_html_a84c4b8b6ed92e7b373b36a3fc17f5bf5"><div class="ttname"><a href="class_character.html#a84c4b8b6ed92e7b373b36a3fc17f5bf5">Character::heal</a></div><div class="ttdeci">void heal(int heal)</div><div class="ttdef"><b>Definition:</b> Character.cpp:65</div></div>
-<div class="ttc" id="class_character_html_a04eee23fbdb9c13b806d6ff0d9131c04"><div class="ttname"><a href="class_character.html#a04eee23fbdb9c13b806d6ff0d9131c04">Character::magic</a></div><div class="ttdeci">void magic(Character &amp;target)</div><div class="ttdef"><b>Definition:</b> Character.cpp:46</div></div>
-<div class="ttc" id="struct_selection_html"><div class="ttname"><a href="struct_selection.html">Selection</a></div><div class="ttdef"><b>Definition:</b> Character.h:28</div></div>
-<div class="ttc" id="_character_8h_html_a2c0364e3d1fbdb7881a87792637f65f8a47c87faef0716aa58d432391eca9d820"><div class="ttname"><a href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8a47c87faef0716aa58d432391eca9d820">Iff::FOE</a></div></div>
-<div class="ttc" id="class_character_html_abdd384831f34238538de88709016afe8"><div class="ttname"><a href="class_character.html#abdd384831f34238538de88709016afe8">Character::data_m</a></div><div class="ttdeci">CharaData data_m</div><div class="ttdef"><b>Definition:</b> Character.h:67</div></div>
-<div class="ttc" id="class_character_html_a611be438cc7a4fa5b9b4d50236a2966b"><div class="ttname"><a href="class_character.html#a611be438cc7a4fa5b9b4d50236a2966b">Character::damage</a></div><div class="ttdeci">void damage(int damage)</div><div class="ttdef"><b>Definition:</b> Character.cpp:56</div></div>
-<div class="ttc" id="class_character_html_a55ee12bd3ec2b766fb3cbe20c3333fe6"><div class="ttname"><a href="class_character.html#a55ee12bd3ec2b766fb3cbe20c3333fe6">Character::selection_m</a></div><div class="ttdeci">Selection selection_m</div><div class="ttdef"><b>Definition:</b> Character.h:64</div></div>
-<div class="ttc" id="class_character_html_ab209a191029576ff3f4ae2cc136733bf"><div class="ttname"><a href="class_character.html#ab209a191029576ff3f4ae2cc136733bf">Character::select</a></div><div class="ttdeci">void select(Selection const &amp;selection)</div><div class="ttdef"><b>Definition:</b> Character.cpp:77</div></div>
-<div class="ttc" id="class_character_html_a1933b175d4533053433422522da38181"><div class="ttname"><a href="class_character.html#a1933b175d4533053433422522da38181">Character::care</a></div><div class="ttdeci">void care(Character &amp;target)</div><div class="ttdef"><b>Definition:</b> Character.cpp:51</div></div>
-<div class="ttc" id="struct_chara_data_html"><div class="ttname"><a href="struct_chara_data.html">CharaData</a></div><div class="ttdef"><b>Definition:</b> CharaData.h:6</div></div>
-<div class="ttc" id="_character_8h_html_ac22f543a628d2695d0297c399b0272d8"><div class="ttname"><a href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a></div><div class="ttdeci">std::list&lt; Character * &gt; CharaList</div><div class="ttdef"><b>Definition:</b> Character.h:38</div></div>
-<div class="ttc" id="_character_8h_html_a5ac9a1ff8916be75f0b563d5e9366bcb"><div class="ttname"><a href="_character_8h.html#a5ac9a1ff8916be75f0b563d5e9366bcb">getAvailableTargets</a></div><div class="ttdeci">CharaList getAvailableTargets(Character *attacker, CharaList &amp;characters, std::string skillName)</div><div class="ttdef"><b>Definition:</b> Character.cpp:3</div></div>
-<div class="ttc" id="class_character_html_aa2766fd908e56f386c6a946c9cde4c5d"><div class="ttname"><a href="class_character.html#aa2766fd908e56f386c6a946c9cde4c5d">Character::getIff</a></div><div class="ttdeci">Iff getIff()</div><div class="ttdef"><b>Definition:</b> Character.cpp:72</div></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include&lt;cassert&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include&lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_chara_data_8h.html">CharaData.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_selection_8h.html">Selection.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&quot;../Selector/Selector.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_selector.html">Selector</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_character_list.html">CharacterList</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_character.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_character.html">Character</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_character.html#a55ee12bd3ec2b766fb3cbe20c3333fe6">   22</a></span>&#160;    <a class="code" href="struct_selection.html">Selection</a> <a class="code" href="class_character.html#a55ee12bd3ec2b766fb3cbe20c3333fe6">selection_m</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_character.html#abdd384831f34238538de88709016afe8">   25</a></span>&#160;    <a class="code" href="struct_chara_data.html">CharaData</a> <a class="code" href="class_character.html#abdd384831f34238538de88709016afe8">data_m</a>;   </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_character.html#a51971ccee9f890b6cd2f354ca6363564">Character</a>(<a class="code" href="struct_chara_data.html">CharaData</a> data);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_character.html#a3333a88ae593c36b229c90371e935d42">~Character</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="struct_selection.html">Selection</a> <a class="code" href="class_character.html#a854b7c44f252ed1c8456112ca2bee9a1">getSelection</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> std::unique_ptr&lt;Selector&gt; <a class="code" href="class_character.html#a6d22f59fc20e2fd75a88cdc02f328549">getSelector</a>() = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="ttc" id="_selection_8h_html"><div class="ttname"><a href="_selection_8h.html">Selection.h</a></div></div>
+<div class="ttc" id="class_character_html_a51971ccee9f890b6cd2f354ca6363564"><div class="ttname"><a href="class_character.html#a51971ccee9f890b6cd2f354ca6363564">Character::Character</a></div><div class="ttdeci">Character(CharaData data)</div><div class="ttdef"><b>Definition:</b> Character.cpp:3</div></div>
+<div class="ttc" id="struct_selection_html"><div class="ttname"><a href="struct_selection.html">Selection</a></div><div class="ttdef"><b>Definition:</b> Selection.h:9</div></div>
+<div class="ttc" id="class_character_html_abdd384831f34238538de88709016afe8"><div class="ttname"><a href="class_character.html#abdd384831f34238538de88709016afe8">Character::data_m</a></div><div class="ttdeci">CharaData data_m</div><div class="ttdef"><b>Definition:</b> Character.h:25</div></div>
+<div class="ttc" id="class_character_html_a55ee12bd3ec2b766fb3cbe20c3333fe6"><div class="ttname"><a href="class_character.html#a55ee12bd3ec2b766fb3cbe20c3333fe6">Character::selection_m</a></div><div class="ttdeci">Selection selection_m</div><div class="ttdef"><b>Definition:</b> Character.h:22</div></div>
+<div class="ttc" id="struct_chara_data_html"><div class="ttname"><a href="struct_chara_data.html">CharaData</a></div><div class="ttdef"><b>Definition:</b> CharaData.h:8</div></div>
 <div class="ttc" id="class_character_html_a3333a88ae593c36b229c90371e935d42"><div class="ttname"><a href="class_character.html#a3333a88ae593c36b229c90371e935d42">Character::~Character</a></div><div class="ttdeci">virtual ~Character()=default</div></div>
-<div class="ttc" id="class_character_html_ae84b80fb6ac2e9271506c84b71d657f6"><div class="ttname"><a href="class_character.html#ae84b80fb6ac2e9271506c84b71d657f6">Character::name_m</a></div><div class="ttdeci">std::string name_m</div><div class="ttdef"><b>Definition:</b> Character.h:69</div></div>
-<div class="ttc" id="_character_8h_html_a2c0364e3d1fbdb7881a87792637f65f8a471e11502a3cc3a519644984935691e8"><div class="ttname"><a href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8a471e11502a3cc3a519644984935691e8">Iff::FRIEND</a></div></div>
-<div class="ttc" id="class_character_html_a459859c74ba468345de63f436ee4442b"><div class="ttname"><a href="class_character.html#a459859c74ba468345de63f436ee4442b">Character::attack</a></div><div class="ttdeci">void attack(Character &amp;target)</div><div class="ttdef"><b>Definition:</b> Character.cpp:41</div></div>
 <div class="ttc" id="_chara_data_8h_html"><div class="ttname"><a href="_chara_data_8h.html">CharaData.h</a></div></div>
-<div class="ttc" id="class_character_html"><div class="ttname"><a href="class_character.html">Character</a></div><div class="ttdef"><b>Definition:</b> Character.h:58</div></div>
-<div class="ttc" id="struct_selection_html_a8634426d66a52087240cffd66104d8b8"><div class="ttname"><a href="struct_selection.html#a8634426d66a52087240cffd66104d8b8">Selection::skillName_m</a></div><div class="ttdeci">std::string skillName_m</div><div class="ttdef"><b>Definition:</b> Character.h:31</div></div>
-<div class="ttc" id="class_character_html_a2ca852f598c4e20b5d932355379c4ac0"><div class="ttname"><a href="class_character.html#a2ca852f598c4e20b5d932355379c4ac0">Character::iff_m</a></div><div class="ttdeci">Iff iff_m</div><div class="ttdef"><b>Definition:</b> Character.h:62</div></div>
-<div class="ttc" id="_character_8h_html_a2c0364e3d1fbdb7881a87792637f65f8"><div class="ttname"><a href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8">Iff</a></div><div class="ttdeci">Iff</div><div class="ttdef"><b>Definition:</b> Character.h:12</div></div>
-<div class="ttc" id="_character_8h_html_a2c0364e3d1fbdb7881a87792637f65f8a696b031073e74bf2cb98e5ef201d4aa3"><div class="ttname"><a href="_character_8h.html#a2c0364e3d1fbdb7881a87792637f65f8a696b031073e74bf2cb98e5ef201d4aa3">Iff::UNKNOWN</a></div></div>
-<div class="ttc" id="class_character_html_a854b7c44f252ed1c8456112ca2bee9a1"><div class="ttname"><a href="class_character.html#a854b7c44f252ed1c8456112ca2bee9a1">Character::getSelection</a></div><div class="ttdeci">Selection getSelection()</div><div class="ttdef"><b>Definition:</b> Character.cpp:93</div></div>
-<div class="ttc" id="class_character_html_abcabc54ae5d60699204c5db2484fc116"><div class="ttname"><a href="class_character.html#abcabc54ae5d60699204c5db2484fc116">Character::Character</a></div><div class="ttdeci">Character(std::string name, CharaData data, int id)</div><div class="ttdef"><b>Definition:</b> Character.cpp:84</div></div>
-<div class="ttc" id="struct_selection_html_a1b21fefdc3fa3795f1c0a4701e9f8ee9"><div class="ttname"><a href="struct_selection.html#a1b21fefdc3fa3795f1c0a4701e9f8ee9">Selection::target_m</a></div><div class="ttdeci">std::string target_m</div><div class="ttdef"><b>Definition:</b> Character.h:33</div></div>
+<div class="ttc" id="class_character_html"><div class="ttname"><a href="class_character.html">Character</a></div><div class="ttdef"><b>Definition:</b> Character.h:18</div></div>
+<div class="ttc" id="class_character_html_a6d22f59fc20e2fd75a88cdc02f328549"><div class="ttname"><a href="class_character.html#a6d22f59fc20e2fd75a88cdc02f328549">Character::getSelector</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Selector &gt; getSelector()=0</div></div>
+<div class="ttc" id="class_character_list_html"><div class="ttname"><a href="class_character_list.html">CharacterList</a></div><div class="ttdef"><b>Definition:</b> CharacterList.h:12</div></div>
+<div class="ttc" id="class_character_html_a854b7c44f252ed1c8456112ca2bee9a1"><div class="ttname"><a href="class_character.html#a854b7c44f252ed1c8456112ca2bee9a1">Character::getSelection</a></div><div class="ttdeci">Selection getSelection()</div><div class="ttdef"><b>Definition:</b> Character.cpp:11</div></div>
+<div class="ttc" id="class_selector_html"><div class="ttname"><a href="class_selector.html">Selector</a></div><div class="ttdef"><b>Definition:</b> Selector.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_27aecf8cdee1280e323e346c83b3ed08.html">BattleSystemPrototype</a></li><li class="navelem"><a class="el" href="dir_56a048de5e07f058c6e6fc2cfedcd5c5.html">Character</a></li><li class="navelem"><a class="el" href="_character_8h.html">Character.h</a></li>
-    <li class="footer">Generated on Sat Feb 21 2015 19:27:17 for BattleSystemPrototype by
+    <li class="footer">Generated on Thu Feb 26 2015 17:26:48 for BattleSystemPrototype by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

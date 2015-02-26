@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['selection',['Selection',['../struct_selection.html',1,'']]],
-  ['selector',['Selector',['../class_selector.html',1,'']]]
+  ['player',['Player',['../class_player.html',1,'']]]
 ];

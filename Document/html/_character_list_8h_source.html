@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>BattleSystemPrototype: C:/Users/Naoya/Documents/Repositories/BattleSystemPrototype/BattleSystemPrototype/Character/CharacterList.h Source File</title>
+<title>BattleSystemPrototype: C:/Users/Naoya/Documents/Repositories/BattleSystemPrototype/BattleSystemPrototype/CharacterList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -109,23 +109,73 @@ $(document).ready(function(){initNavTree('_character_list_8h_source.html','');})
 </div><!--header-->
 <div class="contents">
 <a href="_character_list_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="class_character_list.html">    2</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_character_list.html">CharacterList</a></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;{</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="class_character_list.html#a61fb5a7b18b64f5f82f2e1a7652e1bc6">CharacterList</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_character_list.html#a064e19fd5fc81f44ab5d71215278c294">~CharacterList</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;};</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="ttc" id="class_character_list_html_a064e19fd5fc81f44ab5d71215278c294"><div class="ttname"><a href="class_character_list.html#a064e19fd5fc81f44ab5d71215278c294">CharacterList::~CharacterList</a></div><div class="ttdeci">~CharacterList()=default</div></div>
-<div class="ttc" id="class_character_list_html_a61fb5a7b18b64f5f82f2e1a7652e1bc6"><div class="ttname"><a href="class_character_list.html#a61fb5a7b18b64f5f82f2e1a7652e1bc6">CharacterList::CharacterList</a></div><div class="ttdeci">CharacterList()=default</div></div>
-<div class="ttc" id="class_character_list_html"><div class="ttname"><a href="class_character_list.html">CharacterList</a></div><div class="ttdef"><b>Definition:</b> CharacterList.h:2</div></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include&lt;list&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_character_8h.html">Character\Character.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_condition_of_target_8h.html">Action\ConditionOfTarget.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_character.html">Character</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_character_list.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_character_list.html">CharacterList</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">typedef</span> std::list&lt;Character*&gt; CharaList_t;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">   19</a></span>&#160;    <span class="keyword">typedef</span> std::list&lt;Character*&gt;::iterator <a class="code" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">iterator</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    CharaList_t characters_m;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Condition&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_character_list.html">CharacterList</a> createTargets(Condition &amp;condition)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="class_character_list.html">CharacterList</a> targets;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        targets.characters_m.resize(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            std::count_if(characters_m.begin(), characters_m.end(), condition));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::copy_if(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            characters_m.begin(), characters_m.end(), targets.<a class="code" href="class_character_list.html#a3f33d64e8d14d4902864c62adc8a850b">begin</a>(), condition);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> targets;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_character_list.html">CharacterList</a> <a class="code" href="class_character_list.html#a5b91b4cb88c2aea3a01d38a5c9c0cd8c">getAvailableTargets</a>(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_character.html">Character</a>*actor, std::string action);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_character_list.html#aa57091b62166c958992cdf50bf3918c4">sort</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_character_list.html#a31af65cd57dc3b6291a1dc2d00a6b100">insert</a>(<a class="code" href="class_character.html">Character</a> *character);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    iterator <a class="code" href="class_character_list.html#a3f33d64e8d14d4902864c62adc8a850b">begin</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    iterator <a class="code" href="class_character_list.html#a2727c01ea4dba85daa568dcacd0aebd9">end</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Condition&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_character_list.html#a11abf578cb86b393a3044c491f5a9938">   75</a></span>&#160;    <a class="code" href="class_character.html">Character</a> *<a class="code" href="class_character_list.html#a11abf578cb86b393a3044c491f5a9938">findIf</a>(Condition condition)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">auto</span> found = std::find_if(</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            characters_m.begin(), characters_m.end(), condition);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> found == characters_m.end() ? <span class="keyword">nullptr</span> : *found;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//void erase(iterator first, iterator last);</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="class_character_list.html#a2c075299a05cd62be318defab063bd42">size</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="ttc" id="class_character_list_html_a11abf578cb86b393a3044c491f5a9938"><div class="ttname"><a href="class_character_list.html#a11abf578cb86b393a3044c491f5a9938">CharacterList::findIf</a></div><div class="ttdeci">Character * findIf(Condition condition)</div><div class="ttdef"><b>Definition:</b> CharacterList.h:75</div></div>
+<div class="ttc" id="_character_8h_html"><div class="ttname"><a href="_character_8h.html">Character.h</a></div></div>
+<div class="ttc" id="class_character_list_html_ae35338287a6cc6ee2e7c4b78f310d9f9"><div class="ttname"><a href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">CharacterList::iterator</a></div><div class="ttdeci">std::list&lt; Character * &gt;::iterator iterator</div><div class="ttdef"><b>Definition:</b> CharacterList.h:19</div></div>
+<div class="ttc" id="class_character_list_html_a2c075299a05cd62be318defab063bd42"><div class="ttname"><a href="class_character_list.html#a2c075299a05cd62be318defab063bd42">CharacterList::size</a></div><div class="ttdeci">size_t size() const </div><div class="ttdef"><b>Definition:</b> CharacterList.cpp:35</div></div>
+<div class="ttc" id="class_character_list_html_aa57091b62166c958992cdf50bf3918c4"><div class="ttname"><a href="class_character_list.html#aa57091b62166c958992cdf50bf3918c4">CharacterList::sort</a></div><div class="ttdeci">void sort()</div><div class="ttdef"><b>Definition:</b> CharacterList.cpp:8</div></div>
+<div class="ttc" id="class_character_list_html_a5b91b4cb88c2aea3a01d38a5c9c0cd8c"><div class="ttname"><a href="class_character_list.html#a5b91b4cb88c2aea3a01d38a5c9c0cd8c">CharacterList::getAvailableTargets</a></div><div class="ttdeci">CharacterList getAvailableTargets(Character *actor, std::string action)</div><div class="ttdef"><b>Definition:</b> CharacterList.cpp:18</div></div>
+<div class="ttc" id="class_character_html"><div class="ttname"><a href="class_character.html">Character</a></div><div class="ttdef"><b>Definition:</b> Character.h:18</div></div>
+<div class="ttc" id="class_character_list_html_a31af65cd57dc3b6291a1dc2d00a6b100"><div class="ttname"><a href="class_character_list.html#a31af65cd57dc3b6291a1dc2d00a6b100">CharacterList::insert</a></div><div class="ttdeci">void insert(Character *character)</div><div class="ttdef"><b>Definition:</b> CharacterList.cpp:3</div></div>
+<div class="ttc" id="class_character_list_html_a3f33d64e8d14d4902864c62adc8a850b"><div class="ttname"><a href="class_character_list.html#a3f33d64e8d14d4902864c62adc8a850b">CharacterList::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> CharacterList.cpp:40</div></div>
+<div class="ttc" id="class_character_list_html"><div class="ttname"><a href="class_character_list.html">CharacterList</a></div><div class="ttdef"><b>Definition:</b> CharacterList.h:12</div></div>
+<div class="ttc" id="_condition_of_target_8h_html"><div class="ttname"><a href="_condition_of_target_8h.html">ConditionOfTarget.h</a></div></div>
+<div class="ttc" id="class_character_list_html_a2727c01ea4dba85daa568dcacd0aebd9"><div class="ttname"><a href="class_character_list.html#a2727c01ea4dba85daa568dcacd0aebd9">CharacterList::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> CharacterList.cpp:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_27aecf8cdee1280e323e346c83b3ed08.html">BattleSystemPrototype</a></li><li class="navelem"><a class="el" href="dir_56a048de5e07f058c6e6fc2cfedcd5c5.html">Character</a></li><li class="navelem"><a class="el" href="_character_list_8h.html">CharacterList.h</a></li>
-    <li class="footer">Generated on Sat Feb 21 2015 19:27:17 for BattleSystemPrototype by
+    <li class="navelem"><a class="el" href="dir_27aecf8cdee1280e323e346c83b3ed08.html">BattleSystemPrototype</a></li><li class="navelem"><a class="el" href="_character_list_8h.html">CharacterList.h</a></li>
+    <li class="footer">Generated on Thu Feb 26 2015 17:26:48 for BattleSystemPrototype by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

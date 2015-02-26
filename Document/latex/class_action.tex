@@ -1,0 +1,68 @@
+\hypertarget{class_action}{}\section{Action Class Reference}
+\label{class_action}\index{Action@{Action}}
+
+
+{\ttfamily \#include $<$Action.\+h$>$}
+
+Inheritance diagram for Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_action_ae56128e86ad3c35aa154954fc3e39dc0}{Action} ()=default
+\item 
+virtual \hyperlink{class_action_abfc040fdc62410622a0e3835a713740f}{$\sim$\+Action} ()=default
+\item 
+virtual void \hyperlink{class_action_aac84ff5e2103bbe0067df14b4a302a1d}{do\+Action} (\hyperlink{class_character}{Character} $\ast$actor, \hyperlink{class_character}{Character} $\ast$target)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+キャラクタの行動を表すインターフェース 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_action_ae56128e86ad3c35aa154954fc3e39dc0}{}\index{Action@{Action}!Action@{Action}}
+\index{Action@{Action}!Action@{Action}}
+\subsubsection[{Action}]{\setlength{\rightskip}{0pt plus 5cm}Action\+::\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_action_ae56128e86ad3c35aa154954fc3e39dc0}
+コンストラクタ \hypertarget{class_action_abfc040fdc62410622a0e3835a713740f}{}\index{Action@{Action}!````~Action@{$\sim$\+Action}}
+\index{````~Action@{$\sim$\+Action}!Action@{Action}}
+\subsubsection[{$\sim$\+Action}]{\setlength{\rightskip}{0pt plus 5cm}virtual Action\+::$\sim$\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\label{class_action_abfc040fdc62410622a0e3835a713740f}
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_action_aac84ff5e2103bbe0067df14b4a302a1d}{}\index{Action@{Action}!do\+Action@{do\+Action}}
+\index{do\+Action@{do\+Action}!Action@{Action}}
+\subsubsection[{do\+Action}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Action\+::do\+Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{actor, }
+\item[{{\bf Character} $\ast$}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_action_aac84ff5e2103bbe0067df14b4a302a1d}
+アクションを実行する 
+\begin{DoxyParams}{Parameters}
+{\em actor} & 行動をするキャラクタ \\
+\hline
+{\em target} & 行動を受けるキャラクタ \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_attack_a4ec7c75fb10b3cf4e0d1c060ff7430cc}{Attack}, \hyperlink{class_magic_a67c48e95f1000da9b18c79e1ae7ad6ac}{Magic}, and \hyperlink{class_care_a633cf4254ff730afc7f31313055b8923}{Care}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Action/\hyperlink{_action_8h}{Action.\+h}\end{DoxyCompactItemize}

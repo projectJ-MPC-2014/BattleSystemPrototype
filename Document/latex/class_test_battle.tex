@@ -11,9 +11,9 @@
 \item 
 \hyperlink{class_test_battle_a6cc4b02705e2b488fab6ecc9d7a54ce9}{$\sim$\+Test\+Battle} ()=default
 \item 
-void \hyperlink{class_test_battle_af33ba73b366ee973ab34c57ea7777d9a}{test\+Print} (\hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} \&characters)
+void \hyperlink{class_test_battle_ac53b9ce3c5879b33c3582bd482a29da6}{test\+Print} (\hyperlink{class_character_list}{Character\+List} \&characters)
 \item 
-void \hyperlink{class_test_battle_a563400af60b2fee3aca65f87d487f019}{test\+Attack} (\hyperlink{class_character}{Character} $\ast$attacker, \hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} \&characters)
+void \hyperlink{class_test_battle_a4dbcc33f1a241bf4ac9d39fe219f82fd}{test\+Attack} (std\+::string actor\+Name, std\+::string action\+Name, std\+::string target\+Name, \hyperlink{class_character_list}{Character\+List} characters)
 \end{DoxyCompactItemize}
 
 
@@ -38,26 +38,32 @@ void \hyperlink{class_test_battle_a563400af60b2fee3aca65f87d487f019}{test\+Attac
 デストラクタ 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_test_battle_a563400af60b2fee3aca65f87d487f019}{}\index{Test\+Battle@{Test\+Battle}!test\+Attack@{test\+Attack}}
+\hypertarget{class_test_battle_a4dbcc33f1a241bf4ac9d39fe219f82fd}{}\index{Test\+Battle@{Test\+Battle}!test\+Attack@{test\+Attack}}
 \index{test\+Attack@{test\+Attack}!Test\+Battle@{Test\+Battle}}
 \subsubsection[{test\+Attack}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Battle\+::test\+Attack (
 \begin{DoxyParamCaption}
-\item[{{\bf Character} $\ast$}]{attacker, }
-\item[{{\bf Chara\+List} \&}]{characters}
+\item[{std\+::string}]{actor\+Name, }
+\item[{std\+::string}]{action\+Name, }
+\item[{std\+::string}]{target\+Name, }
+\item[{{\bf Character\+List}}]{characters}
 \end{DoxyParamCaption}
-)}\label{class_test_battle_a563400af60b2fee3aca65f87d487f019}
+)}\label{class_test_battle_a4dbcc33f1a241bf4ac9d39fe219f82fd}
 attackerの行動を選択し,行動ごとの処理をする 
 \begin{DoxyParams}{Parameters}
-{\em attacker} & 行動者  characters 全キャラクタのリスト \\
+{\em actor\+Name} & 行動者名 \\
+\hline
+{\em action\+Name} & 行動名 \\
+\hline
+{\em target\+Name} & 対象の名前  characters 全キャラクタのリスト \\
 \hline
 \end{DoxyParams}
-\hypertarget{class_test_battle_af33ba73b366ee973ab34c57ea7777d9a}{}\index{Test\+Battle@{Test\+Battle}!test\+Print@{test\+Print}}
+\hypertarget{class_test_battle_ac53b9ce3c5879b33c3582bd482a29da6}{}\index{Test\+Battle@{Test\+Battle}!test\+Print@{test\+Print}}
 \index{test\+Print@{test\+Print}!Test\+Battle@{Test\+Battle}}
 \subsubsection[{test\+Print}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+Battle\+::test\+Print (
 \begin{DoxyParamCaption}
-\item[{{\bf Chara\+List} \&}]{characters}
+\item[{{\bf Character\+List} \&}]{characters}
 \end{DoxyParamCaption}
-)}\label{class_test_battle_af33ba73b366ee973ab34c57ea7777d9a}
+)}\label{class_test_battle_ac53b9ce3c5879b33c3582bd482a29da6}
 全キャラクタのステータスを表示 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

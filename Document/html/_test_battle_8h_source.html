@@ -114,33 +114,37 @@ $(document).ready(function(){initNavTree('_test_battle_8h_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_character_8h.html">Character/Character.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_test_battle.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_test_battle.html">TestBattle</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_test_battle.html#ad52ab6c5d7d3da9d94690f39b7234d3b">TestBattle</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_test_battle.html#a6cc4b02705e2b488fab6ecc9d7a54ce9">~TestBattle</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_battle.html#af33ba73b366ee973ab34c57ea7777d9a">testPrint</a>(<a class="code" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a> &amp;characters);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_battle.html#a563400af60b2fee3aca65f87d487f019">testAttack</a>(<a class="code" href="class_character.html">Character</a>* attacker, <a class="code" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a> &amp;characters);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_action_factory_8h.html">Action\ActionFactory.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_character_8h.html">Character/Character.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_test_battle.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_test_battle.html">TestBattle</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_test_battle.html#ad52ab6c5d7d3da9d94690f39b7234d3b">TestBattle</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_test_battle.html#a6cc4b02705e2b488fab6ecc9d7a54ce9">~TestBattle</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_battle.html#ac53b9ce3c5879b33c3582bd482a29da6">testPrint</a>(<a class="code" href="class_character_list.html">CharacterList</a> &amp;characters);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_test_battle.html#a4dbcc33f1a241bf4ac9d39fe219f82fd">testAttack</a>(</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::string actorName,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::string actionName,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        std::string targetName,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="class_character_list.html">CharacterList</a> characters);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="ttc" id="_character_8h_html"><div class="ttname"><a href="_character_8h.html">Character.h</a></div></div>
 <div class="ttc" id="class_test_battle_html_a6cc4b02705e2b488fab6ecc9d7a54ce9"><div class="ttname"><a href="class_test_battle.html#a6cc4b02705e2b488fab6ecc9d7a54ce9">TestBattle::~TestBattle</a></div><div class="ttdeci">~TestBattle()=default</div></div>
-<div class="ttc" id="class_test_battle_html"><div class="ttname"><a href="class_test_battle.html">TestBattle</a></div><div class="ttdef"><b>Definition:</b> TestBattle.h:12</div></div>
-<div class="ttc" id="_character_8h_html_ac22f543a628d2695d0297c399b0272d8"><div class="ttname"><a href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a></div><div class="ttdeci">std::list&lt; Character * &gt; CharaList</div><div class="ttdef"><b>Definition:</b> Character.h:38</div></div>
-<div class="ttc" id="class_test_battle_html_af33ba73b366ee973ab34c57ea7777d9a"><div class="ttname"><a href="class_test_battle.html#af33ba73b366ee973ab34c57ea7777d9a">TestBattle::testPrint</a></div><div class="ttdeci">void testPrint(CharaList &amp;characters)</div><div class="ttdef"><b>Definition:</b> TestBattle.cpp:4</div></div>
+<div class="ttc" id="class_test_battle_html"><div class="ttname"><a href="class_test_battle.html">TestBattle</a></div><div class="ttdef"><b>Definition:</b> TestBattle.h:13</div></div>
+<div class="ttc" id="class_test_battle_html_a4dbcc33f1a241bf4ac9d39fe219f82fd"><div class="ttname"><a href="class_test_battle.html#a4dbcc33f1a241bf4ac9d39fe219f82fd">TestBattle::testAttack</a></div><div class="ttdeci">void testAttack(std::string actorName, std::string actionName, std::string targetName, CharacterList characters)</div><div class="ttdef"><b>Definition:</b> TestBattle.cpp:21</div></div>
 <div class="ttc" id="class_test_battle_html_ad52ab6c5d7d3da9d94690f39b7234d3b"><div class="ttname"><a href="class_test_battle.html#ad52ab6c5d7d3da9d94690f39b7234d3b">TestBattle::TestBattle</a></div><div class="ttdeci">TestBattle()=default</div></div>
-<div class="ttc" id="class_character_html"><div class="ttname"><a href="class_character.html">Character</a></div><div class="ttdef"><b>Definition:</b> Character.h:58</div></div>
-<div class="ttc" id="class_test_battle_html_a563400af60b2fee3aca65f87d487f019"><div class="ttname"><a href="class_test_battle.html#a563400af60b2fee3aca65f87d487f019">TestBattle::testAttack</a></div><div class="ttdeci">void testAttack(Character *attacker, CharaList &amp;characters)</div><div class="ttdef"><b>Definition:</b> TestBattle.cpp:24</div></div>
+<div class="ttc" id="_action_factory_8h_html"><div class="ttname"><a href="_action_factory_8h.html">ActionFactory.h</a></div></div>
+<div class="ttc" id="class_character_list_html"><div class="ttname"><a href="class_character_list.html">CharacterList</a></div><div class="ttdef"><b>Definition:</b> CharacterList.h:12</div></div>
+<div class="ttc" id="class_test_battle_html_ac53b9ce3c5879b33c3582bd482a29da6"><div class="ttname"><a href="class_test_battle.html#ac53b9ce3c5879b33c3582bd482a29da6">TestBattle::testPrint</a></div><div class="ttdeci">void testPrint(CharacterList &amp;characters)</div><div class="ttdef"><b>Definition:</b> TestBattle.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_27aecf8cdee1280e323e346c83b3ed08.html">BattleSystemPrototype</a></li><li class="navelem"><a class="el" href="_test_battle_8h.html">TestBattle.h</a></li>
-    <li class="footer">Generated on Sat Feb 21 2015 19:27:17 for BattleSystemPrototype by
+    <li class="footer">Generated on Thu Feb 26 2015 17:26:48 for BattleSystemPrototype by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -2,12 +2,24 @@
 \label{struct_selection}\index{Selection@{Selection}}
 
 
-{\ttfamily \#include $<$Character.\+h$>$}
+{\ttfamily \#include $<$Selection.\+h$>$}
 
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_selection_a2507ddef6e1ca58ce2446e78bffac79f}{operator==} (\hyperlink{struct_selection}{Selection} const \&selection)
+\item 
+bool \hyperlink{struct_selection_af73a38260e75de68b3648e8b1fd63adb}{operator!=} (\hyperlink{struct_selection}{Selection} const \&selection)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_selection}{Selection} \hyperlink{struct_selection_ac6354c46eb8f69fe42f8dabcecd9ab41}{null\+Selection} ()
+\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \hyperlink{struct_selection_a8634426d66a52087240cffd66104d8b8}{skill\+Name\+\_\+m}
+std\+::string \hyperlink{struct_selection_afa2a96c53dda82f7bd1c8a090bdc254e}{action\+\_\+m}
 \item 
 std\+::string \hyperlink{struct_selection_a1b21fefdc3fa3795f1c0a4701e9f8ee9}{target\+\_\+m}
 \end{DoxyCompactItemize}
@@ -16,10 +28,34 @@ std\+::string \hyperlink{struct_selection_a1b21fefdc3fa3795f1c0a4701e9f8ee9}{tar
 \subsection{Detailed Description}
 プレイヤの行動を表す構造体 スキル名とその対象を持つ 
 
+\subsection{Member Function Documentation}
+\hypertarget{struct_selection_ac6354c46eb8f69fe42f8dabcecd9ab41}{}\index{Selection@{Selection}!null\+Selection@{null\+Selection}}
+\index{null\+Selection@{null\+Selection}!Selection@{Selection}}
+\subsubsection[{null\+Selection}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Selection} Selection\+::null\+Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{struct_selection_ac6354c46eb8f69fe42f8dabcecd9ab41}
+無効な行動選択を得る \hypertarget{struct_selection_af73a38260e75de68b3648e8b1fd63adb}{}\index{Selection@{Selection}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Selection@{Selection}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Selection\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Selection} const \&}]{selection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_selection_af73a38260e75de68b3648e8b1fd63adb}
+\hypertarget{struct_selection_a2507ddef6e1ca58ce2446e78bffac79f}{}\index{Selection@{Selection}!operator==@{operator==}}
+\index{operator==@{operator==}!Selection@{Selection}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Selection\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Selection} const \&}]{selection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_selection_a2507ddef6e1ca58ce2446e78bffac79f}
+
+
 \subsection{Member Data Documentation}
-\hypertarget{struct_selection_a8634426d66a52087240cffd66104d8b8}{}\index{Selection@{Selection}!skill\+Name\+\_\+m@{skill\+Name\+\_\+m}}
-\index{skill\+Name\+\_\+m@{skill\+Name\+\_\+m}!Selection@{Selection}}
-\subsubsection[{skill\+Name\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Selection\+::skill\+Name\+\_\+m}\label{struct_selection_a8634426d66a52087240cffd66104d8b8}
+\hypertarget{struct_selection_afa2a96c53dda82f7bd1c8a090bdc254e}{}\index{Selection@{Selection}!action\+\_\+m@{action\+\_\+m}}
+\index{action\+\_\+m@{action\+\_\+m}!Selection@{Selection}}
+\subsubsection[{action\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Selection\+::action\+\_\+m}\label{struct_selection_afa2a96c53dda82f7bd1c8a090bdc254e}
 スキル名 \hypertarget{struct_selection_a1b21fefdc3fa3795f1c0a4701e9f8ee9}{}\index{Selection@{Selection}!target\+\_\+m@{target\+\_\+m}}
 \index{target\+\_\+m@{target\+\_\+m}!Selection@{Selection}}
 \subsubsection[{target\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Selection\+::target\+\_\+m}\label{struct_selection_a1b21fefdc3fa3795f1c0a4701e9f8ee9}
@@ -27,4 +63,4 @@ std\+::string \hyperlink{struct_selection_a1b21fefdc3fa3795f1c0a4701e9f8ee9}{tar
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Character/\hyperlink{_character_8h}{Character.\+h}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Character/\hyperlink{_selection_8h}{Selection.\+h}\end{DoxyCompactItemize}

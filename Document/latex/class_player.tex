@@ -13,9 +13,11 @@ Inheritance diagram for Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_player_ac67c2c665f202dd5a8d69eb4b7c39901}{Player} (std\+::string name, \hyperlink{struct_chara_data}{Chara\+Data} data, int id)
+\hyperlink{class_player_aea5b55daefa9540ed96dd44a149ce685}{Player} (\hyperlink{struct_chara_data}{Chara\+Data} data)
 \item 
 \hyperlink{class_player_a40d3c47b65e9652c363a8fde41f7bbf5}{$\sim$\+Player} ()=default
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_selector}{Selector} $>$ \hyperlink{class_player_a42c255e83fa5a592f6ae9187f1605eb5}{get\+Selector} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -24,15 +26,13 @@ Inheritance diagram for Player\+:\begin{figure}[H]
 プレイヤキャラクタ 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_player_ac67c2c665f202dd5a8d69eb4b7c39901}{}\index{Player@{Player}!Player@{Player}}
+\hypertarget{class_player_aea5b55daefa9540ed96dd44a149ce685}{}\index{Player@{Player}!Player@{Player}}
 \index{Player@{Player}!Player@{Player}}
 \subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::\+Player (
 \begin{DoxyParamCaption}
-\item[{std\+::string}]{name, }
-\item[{{\bf Chara\+Data}}]{data, }
-\item[{int}]{id}
+\item[{{\bf Chara\+Data}}]{data}
 \end{DoxyParamCaption}
-)}\label{class_player_ac67c2c665f202dd5a8d69eb4b7c39901}
+)}\label{class_player_aea5b55daefa9540ed96dd44a149ce685}
 コンストラクタ \hypertarget{class_player_a40d3c47b65e9652c363a8fde41f7bbf5}{}\index{Player@{Player}!````~Player@{$\sim$\+Player}}
 \index{````~Player@{$\sim$\+Player}!Player@{Player}}
 \subsubsection[{$\sim$\+Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::$\sim$\+Player (
@@ -41,6 +41,20 @@ Inheritance diagram for Player\+:\begin{figure}[H]
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [default]}}\label{class_player_a40d3c47b65e9652c363a8fde41f7bbf5}
 デストラクタ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_a42c255e83fa5a592f6ae9187f1605eb5}{}\index{Player@{Player}!get\+Selector@{get\+Selector}}
+\index{get\+Selector@{get\+Selector}!Player@{Player}}
+\subsubsection[{get\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Selector} $>$ Player\+::get\+Selector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_player_a42c255e83fa5a592f6ae9187f1605eb5}
+C\+U\+Iで行動選択するクラスを生成する 
+
+Implements \hyperlink{class_character_a6d22f59fc20e2fd75a88cdc02f328549}{Character}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

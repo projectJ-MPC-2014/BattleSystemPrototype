@@ -1,0 +1,108 @@
+\hypertarget{class_condition_of_target}{}\section{Condition\+Of\+Target Class Reference}
+\label{class_condition_of_target}\index{Condition\+Of\+Target@{Condition\+Of\+Target}}
+
+
+{\ttfamily \#include $<$Condition\+Of\+Target.\+h$>$}
+
+Inheritance diagram for Condition\+Of\+Target\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_condition_of_target}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_condition_of_target_a88ac45fb30fa4badcaa05d498eaefb6e}{Condition\+Of\+Target} (\hyperlink{class_character}{Character} $\ast$actor)
+\item 
+\hyperlink{class_condition_of_target_a12ba88773efe3e38b49768fb8241c2e1}{Condition\+Of\+Target} (\hyperlink{class_condition_of_target}{Condition\+Of\+Target} const \&)=default
+\item 
+virtual \hyperlink{class_condition_of_target_acb8515e760920f9fbbe8cd8a0a514c3e}{$\sim$\+Condition\+Of\+Target} ()=default
+\item 
+bool \hyperlink{class_condition_of_target_acb7a4ec40ad051b3d9faf12f764cab95}{operator()} (\hyperlink{class_character}{Character} $\ast$chara)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_condition_of_target_a74d0f2d1449d798bd1ea410c9472a807}{satisfies} (\hyperlink{class_character}{Character} $\ast$chara)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_character}{Character} $\ast$ \hyperlink{class_condition_of_target_acab00b9d5f8bb54fb4ccedab7d23deaf}{actor\+\_\+m}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+行動選択者が選択した行動のターゲットの条件の抽象クラス 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_condition_of_target_a88ac45fb30fa4badcaa05d498eaefb6e}{}\index{Condition\+Of\+Target@{Condition\+Of\+Target}!Condition\+Of\+Target@{Condition\+Of\+Target}}
+\index{Condition\+Of\+Target@{Condition\+Of\+Target}!Condition\+Of\+Target@{Condition\+Of\+Target}}
+\subsubsection[{Condition\+Of\+Target}]{\setlength{\rightskip}{0pt plus 5cm}Condition\+Of\+Target\+::\+Condition\+Of\+Target (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{actor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_condition_of_target_a88ac45fb30fa4badcaa05d498eaefb6e}
+行動選択者を設定する引数付きコンストラクタ \hypertarget{class_condition_of_target_a12ba88773efe3e38b49768fb8241c2e1}{}\index{Condition\+Of\+Target@{Condition\+Of\+Target}!Condition\+Of\+Target@{Condition\+Of\+Target}}
+\index{Condition\+Of\+Target@{Condition\+Of\+Target}!Condition\+Of\+Target@{Condition\+Of\+Target}}
+\subsubsection[{Condition\+Of\+Target}]{\setlength{\rightskip}{0pt plus 5cm}Condition\+Of\+Target\+::\+Condition\+Of\+Target (
+\begin{DoxyParamCaption}
+\item[{{\bf Condition\+Of\+Target} const \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_condition_of_target_a12ba88773efe3e38b49768fb8241c2e1}
+コピーコンストラクタ \hypertarget{class_condition_of_target_acb8515e760920f9fbbe8cd8a0a514c3e}{}\index{Condition\+Of\+Target@{Condition\+Of\+Target}!````~Condition\+Of\+Target@{$\sim$\+Condition\+Of\+Target}}
+\index{````~Condition\+Of\+Target@{$\sim$\+Condition\+Of\+Target}!Condition\+Of\+Target@{Condition\+Of\+Target}}
+\subsubsection[{$\sim$\+Condition\+Of\+Target}]{\setlength{\rightskip}{0pt plus 5cm}virtual Condition\+Of\+Target\+::$\sim$\+Condition\+Of\+Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_condition_of_target_acb8515e760920f9fbbe8cd8a0a514c3e}
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_condition_of_target_acb7a4ec40ad051b3d9faf12f764cab95}{}\index{Condition\+Of\+Target@{Condition\+Of\+Target}!operator()@{operator()}}
+\index{operator()@{operator()}!Condition\+Of\+Target@{Condition\+Of\+Target}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}bool Condition\+Of\+Target\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{chara}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_condition_of_target_acb7a4ec40ad051b3d9faf12f764cab95}
+派生クラスに()演算子を提供する 条件を渡されたキャラクタが条件を満たす時真を返す 
+\begin{DoxyParams}{Parameters}
+{\em chara} & 判定すべきキャラクタ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+charaが条件を満たす時true,そうでない時false 
+\end{DoxyReturn}
+\hypertarget{class_condition_of_target_a74d0f2d1449d798bd1ea410c9472a807}{}\index{Condition\+Of\+Target@{Condition\+Of\+Target}!satisfies@{satisfies}}
+\index{satisfies@{satisfies}!Condition\+Of\+Target@{Condition\+Of\+Target}}
+\subsubsection[{satisfies}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Condition\+Of\+Target\+::satisfies (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{chara}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{class_condition_of_target_a74d0f2d1449d798bd1ea410c9472a807}
+条件を渡されたキャラクタが条件を満たす時真を返す 
+\begin{DoxyParams}{Parameters}
+{\em chara} & 判定すべきキャラクタ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+charaが条件を満たす時true,そうでない時false 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_is_ally_a9537dc9a3912a8c5cf5d8950920e36f4}{Is\+Ally}, and \hyperlink{class_is_not_ally_a68d6f654a0ff96e60c4b3616c0b932f2}{Is\+Not\+Ally}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_condition_of_target_acab00b9d5f8bb54fb4ccedab7d23deaf}{}\index{Condition\+Of\+Target@{Condition\+Of\+Target}!actor\+\_\+m@{actor\+\_\+m}}
+\index{actor\+\_\+m@{actor\+\_\+m}!Condition\+Of\+Target@{Condition\+Of\+Target}}
+\subsubsection[{actor\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Character}$\ast$ Condition\+Of\+Target\+::actor\+\_\+m\hspace{0.3cm}{\ttfamily [protected]}}\label{class_condition_of_target_acab00b9d5f8bb54fb4ccedab7d23deaf}
+行動選択キャラクタのポインタ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Action/\hyperlink{_condition_of_target_8h}{Condition\+Of\+Target.\+h}\end{DoxyCompactItemize}

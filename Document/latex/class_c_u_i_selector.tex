@@ -17,7 +17,7 @@ Inheritance diagram for C\+U\+I\+Selector\+:\begin{figure}[H]
 \item 
 \hyperlink{class_c_u_i_selector_af877df609d41b74916971a0d45d325ca}{$\sim$\+C\+U\+I\+Selector} ()=default
 \item 
-int \hyperlink{class_c_u_i_selector_a6aafe213a1f62617089e5f37eabd7fbc}{select} (\hyperlink{class_character}{Character} $\ast$attacker, \hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} characters)
+\hyperlink{struct_selection}{Selection} \hyperlink{class_c_u_i_selector_afde129d9728716f06ff405498e383eb9}{select} (\hyperlink{class_character}{Character} $\ast$attacker, \hyperlink{class_character_list}{Character\+List} characters) override
 \end{DoxyCompactItemize}
 
 
@@ -42,14 +42,14 @@ int \hyperlink{class_c_u_i_selector_a6aafe213a1f62617089e5f37eabd7fbc}{select} (
 デストラクタ 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_c_u_i_selector_a6aafe213a1f62617089e5f37eabd7fbc}{}\index{C\+U\+I\+Selector@{C\+U\+I\+Selector}!select@{select}}
+\hypertarget{class_c_u_i_selector_afde129d9728716f06ff405498e383eb9}{}\index{C\+U\+I\+Selector@{C\+U\+I\+Selector}!select@{select}}
 \index{select@{select}!C\+U\+I\+Selector@{C\+U\+I\+Selector}}
-\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}int C\+U\+I\+Selector\+::select (
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} C\+U\+I\+Selector\+::select (
 \begin{DoxyParamCaption}
 \item[{{\bf Character} $\ast$}]{attacker, }
-\item[{{\bf Chara\+List}}]{characters}
+\item[{{\bf Character\+List}}]{characters}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_u_i_selector_a6aafe213a1f62617089e5f37eabd7fbc}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_u_i_selector_afde129d9728716f06ff405498e383eb9}
 指定されたキャラクターの行動を\+C\+U\+Iで選択する 
 \begin{DoxyParams}{Parameters}
 {\em attacker} & 攻撃者 \\
@@ -62,7 +62,7 @@ int \hyperlink{class_c_u_i_selector_a6aafe213a1f62617089e5f37eabd7fbc}{select} (
 \end{DoxyReturn}
 
 
-Implements \hyperlink{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{Selector}.
+Implements \hyperlink{class_selector_aaf09674f730fe58b1f79fb8a7c1b7274}{Selector}.
 
 
 

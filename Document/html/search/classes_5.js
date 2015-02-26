@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['randomselector',['RandomSelector',['../class_random_selector.html',1,'']]]
+  ['magic',['Magic',['../class_magic.html',1,'']]]
 ];

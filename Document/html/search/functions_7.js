@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['magic',['magic',['../class_character.html#a04eee23fbdb9c13b806d6ff0d9131c04',1,'Character']]],
-  ['main',['main',['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Main.cpp']]],
-  ['message',['message',['../class_output.html#af36b6a1a19e8a83bf6f430634d5aa3e9',1,'Output']]],
-  ['messageline',['messageLine',['../class_output.html#acad470b70e445173226aa2c3638601e6',1,'Output']]]
+  ['insert',['insert',['../class_character_list.html#a31af65cd57dc3b6291a1dc2d00a6b100',1,'CharacterList']]],
+  ['isally',['IsAlly',['../class_is_ally.html#a61c99b2d2b95bde567e84576a9a46348',1,'IsAlly::IsAlly(Character *actor)'],['../class_is_ally.html#a3761439209c95a462eb4937136559592',1,'IsAlly::IsAlly(IsAlly const &amp;)=default']]],
+  ['isnotally',['IsNotAlly',['../class_is_not_ally.html#addc31b0d4c8882fecdee1f6c538b6c53',1,'IsNotAlly::IsNotAlly(Character *actor)'],['../class_is_not_ally.html#ab6199178430694d961ec6549ff4d6124',1,'IsNotAlly::IsNotAlly(IsNotAlly const &amp;)=default']]]
 ];

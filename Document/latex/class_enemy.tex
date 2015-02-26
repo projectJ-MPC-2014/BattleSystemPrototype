@@ -13,9 +13,11 @@ Inheritance diagram for Enemy\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_enemy_afdece8a2747dba98b4d6a2b5dd33e7fd}{Enemy} (std\+::string name, \hyperlink{struct_chara_data}{Chara\+Data} data, int id)
+\hyperlink{class_enemy_aea2d0aea8631f913f837342aa625ad94}{Enemy} (\hyperlink{struct_chara_data}{Chara\+Data} data)
 \item 
 \hyperlink{class_enemy_aca00fa2f20cea544f52beeb5aa1648f1}{$\sim$\+Enemy} ()=default
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_selector}{Selector} $>$ \hyperlink{class_enemy_a0cef419260aadb4054b97348cfec11f3}{get\+Selector} () override
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -24,15 +26,13 @@ Inheritance diagram for Enemy\+:\begin{figure}[H]
 敵キャラクタ 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_enemy_afdece8a2747dba98b4d6a2b5dd33e7fd}{}\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\hypertarget{class_enemy_aea2d0aea8631f913f837342aa625ad94}{}\index{Enemy@{Enemy}!Enemy@{Enemy}}
 \index{Enemy@{Enemy}!Enemy@{Enemy}}
 \subsubsection[{Enemy}]{\setlength{\rightskip}{0pt plus 5cm}Enemy\+::\+Enemy (
 \begin{DoxyParamCaption}
-\item[{std\+::string}]{name, }
-\item[{{\bf Chara\+Data}}]{data, }
-\item[{int}]{id}
+\item[{{\bf Chara\+Data}}]{data}
 \end{DoxyParamCaption}
-)}\label{class_enemy_afdece8a2747dba98b4d6a2b5dd33e7fd}
+)}\label{class_enemy_aea2d0aea8631f913f837342aa625ad94}
 コンストラクタ \hypertarget{class_enemy_aca00fa2f20cea544f52beeb5aa1648f1}{}\index{Enemy@{Enemy}!````~Enemy@{$\sim$\+Enemy}}
 \index{````~Enemy@{$\sim$\+Enemy}!Enemy@{Enemy}}
 \subsubsection[{$\sim$\+Enemy}]{\setlength{\rightskip}{0pt plus 5cm}Enemy\+::$\sim$\+Enemy (
@@ -41,6 +41,20 @@ Inheritance diagram for Enemy\+:\begin{figure}[H]
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [default]}}\label{class_enemy_aca00fa2f20cea544f52beeb5aa1648f1}
 デストラクタ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_enemy_a0cef419260aadb4054b97348cfec11f3}{}\index{Enemy@{Enemy}!get\+Selector@{get\+Selector}}
+\index{get\+Selector@{get\+Selector}!Enemy@{Enemy}}
+\subsubsection[{get\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf Selector} $>$ Enemy\+::get\+Selector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_enemy_a0cef419260aadb4054b97348cfec11f3}
+ランダムに行動選択するクラスを生成する 行動選択クラスへのポインタ 
+
+Implements \hyperlink{class_character_a6d22f59fc20e2fd75a88cdc02f328549}{Character}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

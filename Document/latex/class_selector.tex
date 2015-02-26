@@ -17,7 +17,7 @@ Inheritance diagram for Selector\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{class_selector_aadde929b3590fb6d34ac9ec91333ce5c}{$\sim$\+Selector} ()=default
 \item 
-virtual int \hyperlink{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{select} (\hyperlink{class_character}{Character} $\ast$attacker, \hyperlink{_character_8h_ac22f543a628d2695d0297c399b0272d8}{Chara\+List} characters)=0
+virtual \hyperlink{struct_selection}{Selection} \hyperlink{class_selector_aaf09674f730fe58b1f79fb8a7c1b7274}{select} (\hyperlink{class_character}{Character} $\ast$actor, \hyperlink{class_character_list}{Character\+List} characters)=0
 \end{DoxyCompactItemize}
 
 
@@ -42,14 +42,14 @@ virtual int \hyperlink{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{select}
 デストラクタ 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{}\index{Selector@{Selector}!select@{select}}
+\hypertarget{class_selector_aaf09674f730fe58b1f79fb8a7c1b7274}{}\index{Selector@{Selector}!select@{select}}
 \index{select@{select}!Selector@{Selector}}
-\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Selector\+::select (
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Selection} Selector\+::select (
 \begin{DoxyParamCaption}
-\item[{{\bf Character} $\ast$}]{attacker, }
-\item[{{\bf Chara\+List}}]{characters}
+\item[{{\bf Character} $\ast$}]{actor, }
+\item[{{\bf Character\+List}}]{characters}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_selector_a63996c865b5c992deee9c92d3d02cfd3}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_selector_aaf09674f730fe58b1f79fb8a7c1b7274}
 指定されたキャラクターの行動を選択する 
 \begin{DoxyParams}{Parameters}
 {\em attacker} & 攻撃者 \\
@@ -58,11 +58,11 @@ virtual int \hyperlink{class_selector_a63996c865b5c992deee9c92d3d02cfd3}{select}
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-選択されたかどうか 選択されたら1 選択されなかったら0 
+選択されたかどうか 選択されたら 選択された選択 選択されなかったら \hyperlink{struct_selection_ac6354c46eb8f69fe42f8dabcecd9ab41}{Selection\+::null\+Selection()} 
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{class_random_selector_ab5d7b7d795cdae3f329484c1d305e9e1}{Random\+Selector}, and \hyperlink{class_c_u_i_selector_a6aafe213a1f62617089e5f37eabd7fbc}{C\+U\+I\+Selector}.
+Implemented in \hyperlink{class_random_selector_a3d7e78cf6cd4c2ec497d4ad984e39492}{Random\+Selector}, and \hyperlink{class_c_u_i_selector_afde129d9728716f06ff405498e383eb9}{C\+U\+I\+Selector}.
 
 
 

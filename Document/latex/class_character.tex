@@ -13,42 +13,21 @@ Inheritance diagram for Character\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_character_abcabc54ae5d60699204c5db2484fc116}{Character} (std\+::string name, \hyperlink{struct_chara_data}{Chara\+Data} data, int id)
+\hyperlink{class_character_a51971ccee9f890b6cd2f354ca6363564}{Character} (\hyperlink{struct_chara_data}{Chara\+Data} data)
 \item 
 virtual \hyperlink{class_character_a3333a88ae593c36b229c90371e935d42}{$\sim$\+Character} ()=default
 \item 
-void \hyperlink{class_character_a04eee23fbdb9c13b806d6ff0d9131c04}{magic} (\hyperlink{class_character}{Character} \&target)
-\item 
-void \hyperlink{class_character_a459859c74ba468345de63f436ee4442b}{attack} (\hyperlink{class_character}{Character} \&target)
-\item 
-void \hyperlink{class_character_a1933b175d4533053433422522da38181}{care} (\hyperlink{class_character}{Character} \&target)
-\item 
 \hyperlink{struct_selection}{Selection} \hyperlink{class_character_a854b7c44f252ed1c8456112ca2bee9a1}{get\+Selection} ()
 \item 
-void \hyperlink{class_character_ab209a191029576ff3f4ae2cc136733bf}{select} (\hyperlink{struct_selection}{Selection} const \&selection)
-\item 
-\hyperlink{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8}{Iff} \hyperlink{class_character_aa2766fd908e56f386c6a946c9cde4c5d}{get\+Iff} ()
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{class_selector}{Selector} $>$ \hyperlink{class_character_a6d22f59fc20e2fd75a88cdc02f328549}{get\+Selector} ()=0
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{struct_chara_data}{Chara\+Data} \hyperlink{class_character_abdd384831f34238538de88709016afe8}{data\+\_\+m}
-\item 
-std\+::string \hyperlink{class_character_ae84b80fb6ac2e9271506c84b71d657f6}{name\+\_\+m}
-\item 
-int \hyperlink{class_character_a5e51ea77e9178ae99a33901300e4bc40}{id\+\_\+m}
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-void \hyperlink{class_character_a611be438cc7a4fa5b9b4d50236a2966b}{damage} (int damage)
-\item 
-void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int heal)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\hyperlink{_character_8h_a2c0364e3d1fbdb7881a87792637f65f8}{Iff} \hyperlink{class_character_a2ca852f598c4e20b5d932355379c4ac0}{iff\+\_\+m}
 \item 
 \hyperlink{struct_selection}{Selection} \hyperlink{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}{selection\+\_\+m}
 \end{DoxyCompactItemize}
@@ -58,15 +37,13 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 キャラクタの情報がまとめられている スキルごとに計算をするメソッドを持つ リファクタリングが必要 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_character_abcabc54ae5d60699204c5db2484fc116}{}\index{Character@{Character}!Character@{Character}}
+\hypertarget{class_character_a51971ccee9f890b6cd2f354ca6363564}{}\index{Character@{Character}!Character@{Character}}
 \index{Character@{Character}!Character@{Character}}
 \subsubsection[{Character}]{\setlength{\rightskip}{0pt plus 5cm}Character\+::\+Character (
 \begin{DoxyParamCaption}
-\item[{std\+::string}]{name, }
-\item[{{\bf Chara\+Data}}]{data, }
-\item[{int}]{id}
+\item[{{\bf Chara\+Data}}]{data}
 \end{DoxyParamCaption}
-)}\label{class_character_abcabc54ae5d60699204c5db2484fc116}
+)}\label{class_character_a51971ccee9f890b6cd2f354ca6363564}
 コンストラクタ キャラクタの情報を設定する 
 \begin{DoxyParams}{Parameters}
 {\em name} & キャラクタ名 \\
@@ -86,52 +63,6 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 デストラクタ 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_character_a459859c74ba468345de63f436ee4442b}{}\index{Character@{Character}!attack@{attack}}
-\index{attack@{attack}!Character@{Character}}
-\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::attack (
-\begin{DoxyParamCaption}
-\item[{{\bf Character} \&}]{target}
-\end{DoxyParamCaption}
-)}\label{class_character_a459859c74ba468345de63f436ee4442b}
-物理攻撃をする関数 
-\begin{DoxyParams}{Parameters}
-{\em target} & 攻撃対象 \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_character_a1933b175d4533053433422522da38181}{}\index{Character@{Character}!care@{care}}
-\index{care@{care}!Character@{Character}}
-\subsubsection[{care}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::care (
-\begin{DoxyParamCaption}
-\item[{{\bf Character} \&}]{target}
-\end{DoxyParamCaption}
-)}\label{class_character_a1933b175d4533053433422522da38181}
-相手を回復をする関数 
-\begin{DoxyParams}{Parameters}
-{\em target} & 回復対象 \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_character_a611be438cc7a4fa5b9b4d50236a2966b}{}\index{Character@{Character}!damage@{damage}}
-\index{damage@{damage}!Character@{Character}}
-\subsubsection[{damage}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::damage (
-\begin{DoxyParamCaption}
-\item[{int}]{damage}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a611be438cc7a4fa5b9b4d50236a2966b}
-ダメージを受ける関数 
-\begin{DoxyParams}{Parameters}
-{\em damage} & 受けるダメージ(体力から引く量) \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_character_aa2766fd908e56f386c6a946c9cde4c5d}{}\index{Character@{Character}!get\+Iff@{get\+Iff}}
-\index{get\+Iff@{get\+Iff}!Character@{Character}}
-\subsubsection[{get\+Iff}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iff} Character\+::get\+Iff (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{class_character_aa2766fd908e56f386c6a946c9cde4c5d}
-キャラクタの敵味方情報を得る \begin{DoxyReturn}{Returns}
-敵味方識別列挙定数 
-\end{DoxyReturn}
 \hypertarget{class_character_a854b7c44f252ed1c8456112ca2bee9a1}{}\index{Character@{Character}!get\+Selection@{get\+Selection}}
 \index{get\+Selection@{get\+Selection}!Character@{Character}}
 \subsubsection[{get\+Selection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Character\+::get\+Selection (
@@ -139,53 +70,24 @@ void \hyperlink{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{heal} (int he
 {}
 \end{DoxyParamCaption}
 )}\label{class_character_a854b7c44f252ed1c8456112ca2bee9a1}
-キャラクタの行動を得る関数 Test\+Battleのtest\+Attackで呼ばれる \hypertarget{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}{}\index{Character@{Character}!heal@{heal}}
-\index{heal@{heal}!Character@{Character}}
-\subsubsection[{heal}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::heal (
+キャラクタの行動を得る関数 Test\+Battleのtest\+Attackで呼ばれる \hypertarget{class_character_a6d22f59fc20e2fd75a88cdc02f328549}{}\index{Character@{Character}!get\+Selector@{get\+Selector}}
+\index{get\+Selector@{get\+Selector}!Character@{Character}}
+\subsubsection[{get\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::unique\+\_\+ptr$<${\bf Selector}$>$ Character\+::get\+Selector (
 \begin{DoxyParamCaption}
-\item[{int}]{heal}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a84c4b8b6ed92e7b373b36a3fc17f5bf5}
-自分が回復する関数 
-\begin{DoxyParams}{Parameters}
-{\em heal} & 回復量 \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_character_a04eee23fbdb9c13b806d6ff0d9131c04}{}\index{Character@{Character}!magic@{magic}}
-\index{magic@{magic}!Character@{Character}}
-\subsubsection[{magic}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::magic (
-\begin{DoxyParamCaption}
-\item[{{\bf Character} \&}]{target}
-\end{DoxyParamCaption}
-)}\label{class_character_a04eee23fbdb9c13b806d6ff0d9131c04}
-魔法攻撃をする関数 
-\begin{DoxyParams}{Parameters}
-{\em target} & 攻撃対象 \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_character_ab209a191029576ff3f4ae2cc136733bf}{}\index{Character@{Character}!select@{select}}
-\index{select@{select}!Character@{Character}}
-\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::select (
-\begin{DoxyParamCaption}
-\item[{{\bf Selection} const \&}]{selection}
-\end{DoxyParamCaption}
-)}\label{class_character_ab209a191029576ff3f4ae2cc136733bf}
-キャラクタの行動選択をセットする 
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_character_a6d22f59fc20e2fd75a88cdc02f328549}
+キャラクタごとの行動選択の仕方を表すクラスを生成する 
+
+Implemented in \hyperlink{class_enemy_a0cef419260aadb4054b97348cfec11f3}{Enemy}, and \hyperlink{class_player_a42c255e83fa5a592f6ae9187f1605eb5}{Player}.
+
+
 
 \subsection{Member Data Documentation}
 \hypertarget{class_character_abdd384831f34238538de88709016afe8}{}\index{Character@{Character}!data\+\_\+m@{data\+\_\+m}}
 \index{data\+\_\+m@{data\+\_\+m}!Character@{Character}}
 \subsubsection[{data\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chara\+Data} Character\+::data\+\_\+m}\label{class_character_abdd384831f34238538de88709016afe8}
-キャラクタのデータ \hypertarget{class_character_a5e51ea77e9178ae99a33901300e4bc40}{}\index{Character@{Character}!id\+\_\+m@{id\+\_\+m}}
-\index{id\+\_\+m@{id\+\_\+m}!Character@{Character}}
-\subsubsection[{id\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}int Character\+::id\+\_\+m}\label{class_character_a5e51ea77e9178ae99a33901300e4bc40}
-キャラクタ\+I\+D \hypertarget{class_character_a2ca852f598c4e20b5d932355379c4ac0}{}\index{Character@{Character}!iff\+\_\+m@{iff\+\_\+m}}
-\index{iff\+\_\+m@{iff\+\_\+m}!Character@{Character}}
-\subsubsection[{iff\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iff} Character\+::iff\+\_\+m\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a2ca852f598c4e20b5d932355379c4ac0}
-プレイヤにとって敵か味方か \hypertarget{class_character_ae84b80fb6ac2e9271506c84b71d657f6}{}\index{Character@{Character}!name\+\_\+m@{name\+\_\+m}}
-\index{name\+\_\+m@{name\+\_\+m}!Character@{Character}}
-\subsubsection[{name\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Character\+::name\+\_\+m}\label{class_character_ae84b80fb6ac2e9271506c84b71d657f6}
-キャラクタ名 \hypertarget{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}{}\index{Character@{Character}!selection\+\_\+m@{selection\+\_\+m}}
+キャラクタのデータ \hypertarget{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}{}\index{Character@{Character}!selection\+\_\+m@{selection\+\_\+m}}
 \index{selection\+\_\+m@{selection\+\_\+m}!Character@{Character}}
 \subsubsection[{selection\+\_\+m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} Character\+::selection\+\_\+m\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a55ee12bd3ec2b766fb3cbe20c3333fe6}
 選択された行動 

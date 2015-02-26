@@ -132,8 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa0ad3d8a77d1fc05b5c63154f3ce9e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadde929b3590fb6d34ac9ec91333ce5c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selector.html#aadde929b3590fb6d34ac9ec91333ce5c">~Selector</a> ()=default</td></tr>
 <tr class="separator:aadde929b3590fb6d34ac9ec91333ce5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63996c865b5c992deee9c92d3d02cfd3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selector.html#a63996c865b5c992deee9c92d3d02cfd3">select</a> (<a class="el" href="class_character.html">Character</a> *attacker, <a class="el" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a> characters)=0</td></tr>
-<tr class="separator:a63996c865b5c992deee9c92d3d02cfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf09674f730fe58b1f79fb8a7c1b7274"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_selection.html">Selection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selector.html#aaf09674f730fe58b1f79fb8a7c1b7274">select</a> (<a class="el" href="class_character.html">Character</a> *actor, <a class="el" href="class_character_list.html">CharacterList</a> characters)=0</td></tr>
+<tr class="separator:aaf09674f730fe58b1f79fb8a7c1b7274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>コマンドを選択するインターフェイス </p>
@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a63996c865b5c992deee9c92d3d02cfd3"></a>
+<a class="anchor" id="aaf09674f730fe58b1f79fb8a7c1b7274"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -195,15 +195,15 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int Selector::select </td>
+          <td class="memname">virtual <a class="el" href="struct_selection.html">Selection</a> Selector::select </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_character.html">Character</a> *&#160;</td>
-          <td class="paramname"><em>attacker</em>, </td>
+          <td class="paramname"><em>actor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_character_8h.html#ac22f543a628d2695d0297c399b0272d8">CharaList</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_character_list.html">CharacterList</a>&#160;</td>
           <td class="paramname"><em>characters</em>&#160;</td>
         </tr>
         <tr>
@@ -225,9 +225,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>選択されたかどうか 選択されたら1 選択されなかったら0 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>選択されたかどうか 選択されたら 選択された選択 選択されなかったら <a class="el" href="struct_selection.html#ac6354c46eb8f69fe42f8dabcecd9ab41">Selection::nullSelection()</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="class_random_selector.html#ab5d7b7d795cdae3f329484c1d305e9e1">RandomSelector</a>, and <a class="el" href="class_c_u_i_selector.html#a6aafe213a1f62617089e5f37eabd7fbc">CUISelector</a>.</p>
+<p>Implemented in <a class="el" href="class_random_selector.html#a3d7e78cf6cd4c2ec497d4ad984e39492">RandomSelector</a>, and <a class="el" href="class_c_u_i_selector.html#afde129d9728716f06ff405498e383eb9">CUISelector</a>.</p>
 
 </div>
 </div>
@@ -240,7 +240,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_selector.html">Selector</a></li>
-    <li class="footer">Generated on Sat Feb 21 2015 19:27:17 for BattleSystemPrototype by
+    <li class="footer">Generated on Thu Feb 26 2015 17:26:49 for BattleSystemPrototype by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

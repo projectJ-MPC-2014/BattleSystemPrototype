@@ -1,0 +1,82 @@
+\hypertarget{class_is_not_ally}{}\section{Is\+Not\+Ally Class Reference}
+\label{class_is_not_ally}\index{Is\+Not\+Ally@{Is\+Not\+Ally}}
+
+
+{\ttfamily \#include $<$Condition\+Of\+Target.\+h$>$}
+
+Inheritance diagram for Is\+Not\+Ally\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_is_not_ally}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_is_not_ally_addc31b0d4c8882fecdee1f6c538b6c53}{Is\+Not\+Ally} (\hyperlink{class_character}{Character} $\ast$actor)
+\item 
+\hyperlink{class_is_not_ally_ab6199178430694d961ec6549ff4d6124}{Is\+Not\+Ally} (\hyperlink{class_is_not_ally}{Is\+Not\+Ally} const \&)=default
+\item 
+virtual \hyperlink{class_is_not_ally_a15f461560f0988fb08ef1b2480743874}{$\sim$\+Is\+Not\+Ally} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_is_not_ally_a68d6f654a0ff96e60c4b3616c0b932f2}{satisfies} (\hyperlink{class_character}{Character} $\ast$chara) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+そのキャラクタが行動選択者の味方でないという条件を表すクラス 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_is_not_ally_addc31b0d4c8882fecdee1f6c538b6c53}{}\index{Is\+Not\+Ally@{Is\+Not\+Ally}!Is\+Not\+Ally@{Is\+Not\+Ally}}
+\index{Is\+Not\+Ally@{Is\+Not\+Ally}!Is\+Not\+Ally@{Is\+Not\+Ally}}
+\subsubsection[{Is\+Not\+Ally}]{\setlength{\rightskip}{0pt plus 5cm}Is\+Not\+Ally\+::\+Is\+Not\+Ally (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{actor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_is_not_ally_addc31b0d4c8882fecdee1f6c538b6c53}
+行動選択者を設定する引数付きコンストラクタ \hypertarget{class_is_not_ally_ab6199178430694d961ec6549ff4d6124}{}\index{Is\+Not\+Ally@{Is\+Not\+Ally}!Is\+Not\+Ally@{Is\+Not\+Ally}}
+\index{Is\+Not\+Ally@{Is\+Not\+Ally}!Is\+Not\+Ally@{Is\+Not\+Ally}}
+\subsubsection[{Is\+Not\+Ally}]{\setlength{\rightskip}{0pt plus 5cm}Is\+Not\+Ally\+::\+Is\+Not\+Ally (
+\begin{DoxyParamCaption}
+\item[{{\bf Is\+Not\+Ally} const \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_is_not_ally_ab6199178430694d961ec6549ff4d6124}
+コピーコンストラクタ \hypertarget{class_is_not_ally_a15f461560f0988fb08ef1b2480743874}{}\index{Is\+Not\+Ally@{Is\+Not\+Ally}!````~Is\+Not\+Ally@{$\sim$\+Is\+Not\+Ally}}
+\index{````~Is\+Not\+Ally@{$\sim$\+Is\+Not\+Ally}!Is\+Not\+Ally@{Is\+Not\+Ally}}
+\subsubsection[{$\sim$\+Is\+Not\+Ally}]{\setlength{\rightskip}{0pt plus 5cm}virtual Is\+Not\+Ally\+::$\sim$\+Is\+Not\+Ally (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_is_not_ally_a15f461560f0988fb08ef1b2480743874}
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_is_not_ally_a68d6f654a0ff96e60c4b3616c0b932f2}{}\index{Is\+Not\+Ally@{Is\+Not\+Ally}!satisfies@{satisfies}}
+\index{satisfies@{satisfies}!Is\+Not\+Ally@{Is\+Not\+Ally}}
+\subsubsection[{satisfies}]{\setlength{\rightskip}{0pt plus 5cm}bool Is\+Not\+Ally\+::satisfies (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{chara}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_is_not_ally_a68d6f654a0ff96e60c4b3616c0b932f2}
+そのキャラクタが行動選択者の味方でない時真を返す 
+\begin{DoxyParams}{Parameters}
+{\em chara} & 判定すべきキャラクタ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+味方でない時true,味方である時false 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_condition_of_target_a74d0f2d1449d798bd1ea410c9472a807}{Condition\+Of\+Target}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Action/\hyperlink{_condition_of_target_8h}{Condition\+Of\+Target.\+h}\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Action/\hyperlink{_condition_of_target_8cpp}{Condition\+Of\+Target.\+cpp}\end{DoxyCompactItemize}

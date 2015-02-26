@@ -1,0 +1,82 @@
+\hypertarget{class_is_ally}{}\section{Is\+Ally Class Reference}
+\label{class_is_ally}\index{Is\+Ally@{Is\+Ally}}
+
+
+{\ttfamily \#include $<$Condition\+Of\+Target.\+h$>$}
+
+Inheritance diagram for Is\+Ally\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_is_ally}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_is_ally_a61c99b2d2b95bde567e84576a9a46348}{Is\+Ally} (\hyperlink{class_character}{Character} $\ast$actor)
+\item 
+\hyperlink{class_is_ally_a3761439209c95a462eb4937136559592}{Is\+Ally} (\hyperlink{class_is_ally}{Is\+Ally} const \&)=default
+\item 
+virtual \hyperlink{class_is_ally_a201dcbba057f67bec2ab1ccb0b19e2fc}{$\sim$\+Is\+Ally} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_is_ally_a9537dc9a3912a8c5cf5d8950920e36f4}{satisfies} (\hyperlink{class_character}{Character} $\ast$chara) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+そのキャラクタが行動選択者の味方であるという条件を表すクラス 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_is_ally_a61c99b2d2b95bde567e84576a9a46348}{}\index{Is\+Ally@{Is\+Ally}!Is\+Ally@{Is\+Ally}}
+\index{Is\+Ally@{Is\+Ally}!Is\+Ally@{Is\+Ally}}
+\subsubsection[{Is\+Ally}]{\setlength{\rightskip}{0pt plus 5cm}Is\+Ally\+::\+Is\+Ally (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{actor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_is_ally_a61c99b2d2b95bde567e84576a9a46348}
+行動選択者を設定する引数付きコンストラクタ \hypertarget{class_is_ally_a3761439209c95a462eb4937136559592}{}\index{Is\+Ally@{Is\+Ally}!Is\+Ally@{Is\+Ally}}
+\index{Is\+Ally@{Is\+Ally}!Is\+Ally@{Is\+Ally}}
+\subsubsection[{Is\+Ally}]{\setlength{\rightskip}{0pt plus 5cm}Is\+Ally\+::\+Is\+Ally (
+\begin{DoxyParamCaption}
+\item[{{\bf Is\+Ally} const \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_is_ally_a3761439209c95a462eb4937136559592}
+コピーコンストラクタ \hypertarget{class_is_ally_a201dcbba057f67bec2ab1ccb0b19e2fc}{}\index{Is\+Ally@{Is\+Ally}!````~Is\+Ally@{$\sim$\+Is\+Ally}}
+\index{````~Is\+Ally@{$\sim$\+Is\+Ally}!Is\+Ally@{Is\+Ally}}
+\subsubsection[{$\sim$\+Is\+Ally}]{\setlength{\rightskip}{0pt plus 5cm}virtual Is\+Ally\+::$\sim$\+Is\+Ally (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_is_ally_a201dcbba057f67bec2ab1ccb0b19e2fc}
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_is_ally_a9537dc9a3912a8c5cf5d8950920e36f4}{}\index{Is\+Ally@{Is\+Ally}!satisfies@{satisfies}}
+\index{satisfies@{satisfies}!Is\+Ally@{Is\+Ally}}
+\subsubsection[{satisfies}]{\setlength{\rightskip}{0pt plus 5cm}bool Is\+Ally\+::satisfies (
+\begin{DoxyParamCaption}
+\item[{{\bf Character} $\ast$}]{chara}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_is_ally_a9537dc9a3912a8c5cf5d8950920e36f4}
+そのキャラクタが行動選択者の味方である時真を返す 
+\begin{DoxyParams}{Parameters}
+{\em chara} & 判定すべきキャラクタ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+味方の時true,味方でない時false 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_condition_of_target_a74d0f2d1449d798bd1ea410c9472a807}{Condition\+Of\+Target}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Action/\hyperlink{_condition_of_target_8h}{Condition\+Of\+Target.\+h}\item 
+C\+:/\+Users/\+Naoya/\+Documents/\+Repositories/\+Battle\+System\+Prototype/\+Battle\+System\+Prototype/\+Action/\hyperlink{_condition_of_target_8cpp}{Condition\+Of\+Target.\+cpp}\end{DoxyCompactItemize}

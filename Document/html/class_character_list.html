@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('class_character_list.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_character_list-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -116,64 +117,191 @@ $(document).ready(function(){initNavTree('class_character_list.html','');});
 
 <p><code>#include &lt;<a class="el" href="_character_list_8h_source.html">CharacterList.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae35338287a6cc6ee2e7c4b78f310d9f9"><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="class_character.html">Character</a> * &gt;::<a class="el" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">iterator</a></td></tr>
+<tr class="separator:ae35338287a6cc6ee2e7c4b78f310d9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a61fb5a7b18b64f5f82f2e1a7652e1bc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#a61fb5a7b18b64f5f82f2e1a7652e1bc6">CharacterList</a> ()=default</td></tr>
-<tr class="separator:a61fb5a7b18b64f5f82f2e1a7652e1bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a064e19fd5fc81f44ab5d71215278c294"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#a064e19fd5fc81f44ab5d71215278c294">~CharacterList</a> ()=default</td></tr>
-<tr class="separator:a064e19fd5fc81f44ab5d71215278c294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b91b4cb88c2aea3a01d38a5c9c0cd8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_character_list.html">CharacterList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#a5b91b4cb88c2aea3a01d38a5c9c0cd8c">getAvailableTargets</a> (<a class="el" href="class_character.html">Character</a> *actor, std::string action)</td></tr>
+<tr class="separator:a5b91b4cb88c2aea3a01d38a5c9c0cd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57091b62166c958992cdf50bf3918c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#aa57091b62166c958992cdf50bf3918c4">sort</a> ()</td></tr>
+<tr class="separator:aa57091b62166c958992cdf50bf3918c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31af65cd57dc3b6291a1dc2d00a6b100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#a31af65cd57dc3b6291a1dc2d00a6b100">insert</a> (<a class="el" href="class_character.html">Character</a> *character)</td></tr>
+<tr class="separator:a31af65cd57dc3b6291a1dc2d00a6b100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f33d64e8d14d4902864c62adc8a850b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#a3f33d64e8d14d4902864c62adc8a850b">begin</a> ()</td></tr>
+<tr class="separator:a3f33d64e8d14d4902864c62adc8a850b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2727c01ea4dba85daa568dcacd0aebd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#a2727c01ea4dba85daa568dcacd0aebd9">end</a> ()</td></tr>
+<tr class="separator:a2727c01ea4dba85daa568dcacd0aebd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11abf578cb86b393a3044c491f5a9938"><td class="memTemplParams" colspan="2">template&lt;typename Condition &gt; </td></tr>
+<tr class="memitem:a11abf578cb86b393a3044c491f5a9938"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_character.html">Character</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_character_list.html#a11abf578cb86b393a3044c491f5a9938">findIf</a> (Condition condition)</td></tr>
+<tr class="separator:a11abf578cb86b393a3044c491f5a9938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c075299a05cd62be318defab063bd42"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character_list.html#a2c075299a05cd62be318defab063bd42">size</a> () const </td></tr>
+<tr class="separator:a2c075299a05cd62be318defab063bd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a61fb5a7b18b64f5f82f2e1a7652e1bc6"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>キャラクタをリストでまとめたラッパクラス </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ae35338287a6cc6ee2e7c4b78f310d9f9"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CharacterList::CharacterList </td>
+          <td class="memname">typedef std::list&lt;<a class="el" href="class_character.html">Character</a>*&gt;::<a class="el" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">iterator</a> <a class="el" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">CharacterList::iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>イテレータの型 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3f33d64e8d14d4902864c62adc8a850b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">CharacterList::iterator</a> CharacterList::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>コンストラクタ </p>
+<p>先頭のイテレータを返す </p><dl class="section return"><dt>Returns</dt><dd>先頭のイテレータ </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a064e19fd5fc81f44ab5d71215278c294"></a>
+<a class="anchor" id="a2727c01ea4dba85daa568dcacd0aebd9"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CharacterList::~CharacterList </td>
+          <td class="memname"><a class="el" href="class_character_list.html#ae35338287a6cc6ee2e7c4b78f310d9f9">CharacterList::iterator</a> CharacterList::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>デストラクタ </p>
+<p>末尾のイテレータを返す </p><dl class="section return"><dt>Returns</dt><dd>末尾のイテレータ </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Naoya/Documents/Repositories/BattleSystemPrototype/BattleSystemPrototype/Character/<a class="el" href="_character_list_8h_source.html">CharacterList.h</a></li>
+<a class="anchor" id="a11abf578cb86b393a3044c491f5a9938"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Condition &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_character.html">Character</a>* CharacterList::findIf </td>
+          <td>(</td>
+          <td class="paramtype">Condition&#160;</td>
+          <td class="paramname"><em>condition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>条件を満たすキャラクタを検索してキャラクタクラスのポインタを返す  条件(関数オブジェクト) </p><dl class="section return"><dt>Returns</dt><dd>条件を満たすキャラクタが見つからない時 nullptr, 見つかった時 そのキャラクタへのポインタ </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b91b4cb88c2aea3a01d38a5c9c0cd8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_character_list.html">CharacterList</a> CharacterList::getAvailableTargets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_character.html">Character</a> *&#160;</td>
+          <td class="paramname"><em>actor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>選択可能な対象(スキルを適用できる)のリストを得る関数 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actor</td><td>行動するキャラクタ </td></tr>
+    <tr><td class="paramname">action</td><td>actorが選択したスキルの名前 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>スキルを適用できるキャラクタのリスト </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a31af65cd57dc3b6291a1dc2d00a6b100"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterList::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_character.html">Character</a> *&#160;</td>
+          <td class="paramname"><em>character</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>リストにキャラクタを挿入する </p>
+
+</div>
+</div>
+<a class="anchor" id="a2c075299a05cd62be318defab063bd42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t CharacterList::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>リストの要素数を返す </p><dl class="section return"><dt>Returns</dt><dd>リストの要素数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa57091b62166c958992cdf50bf3918c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterList::sort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>素早い順に並び替える </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>C:/Users/Naoya/Documents/Repositories/BattleSystemPrototype/BattleSystemPrototype/<a class="el" href="_character_list_8h_source.html">CharacterList.h</a></li>
+<li>C:/Users/Naoya/Documents/Repositories/BattleSystemPrototype/BattleSystemPrototype/<a class="el" href="_character_list_8cpp.html">CharacterList.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -181,7 +309,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_character_list.html">CharacterList</a></li>
-    <li class="footer">Generated on Sat Feb 21 2015 19:27:17 for BattleSystemPrototype by
+    <li class="footer">Generated on Thu Feb 26 2015 17:26:48 for BattleSystemPrototype by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

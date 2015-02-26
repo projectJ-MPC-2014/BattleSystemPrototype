@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_5fm',['name_m',['../class_character.html#ae84b80fb6ac2e9271506c84b71d657f6',1,'Character']]]
+  ['name_5fm',['name_m',['../struct_chara_data.html#a96f453c506c225341d2752d4888d515e',1,'CharaData']]]
 ];
