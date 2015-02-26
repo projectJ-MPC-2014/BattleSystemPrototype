@@ -1,9 +1,13 @@
 #include "Player.h"
 
 
-Player::Player(std::string name, CharaData data, int id)
-	:Character(name, data, id)
+Player::Player(CharaData data)
+	:Character(data)
 {
-	iff_m = Iff::FRIEND;
+	data_m.iff_m = Iff::FRIEND;
 }
 
+std::unique_ptr<Selector> Player::getSelector()
+{
+	return std::make_unique<CUISelector>();
+}

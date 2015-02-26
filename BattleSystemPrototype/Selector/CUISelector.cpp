@@ -1,34 +1,33 @@
 #include "CUISelector.h"
 
-
-int CUISelector::select( Character *attacker, CharaList characters )
+Selection CUISelector::select( Character *actor, CharacterList characters )
 {
-	std::string skillName;
+	std::string action;
 	std::string target;
 
 	//スキルをCUI入力
-	std::cout << attacker->name_m + " の せんたく" << std::endl;
-		// todo:選べるコマンド一覧を表示する
-	std::cout << "Command:";
-	std::cin >> skillName;
+	auto isAction = [&action](std::string a) { return a == action; };
+	std::cout << "Select command.\t" << "attack magic care\n";
+	do {
+		std::cout << "command-->";
+		std::cin >> action;
+	} while(std::none_of(BattleCommands::COMMANDS_m.begin(), BattleCommands::COMMANDS_m.end(), isAction));
 
 	//選択可能なキャラクタを抽出して表示
-	CharaList targets = getAvailableTargets( attacker, characters, skillName );
-	auto print = []( Character *target ){std::cout << target->name_m << std::endl; };
-	auto contains = [&target]( Character* t ){return target == t->name_m; };
-	std::for_each( targets.begin(), targets.end(), print );
+	CharacterList targets = characters.getAvailableTargets(actor, action);
+	auto print = [](Character *target) { std::cout << target->data_m.name_m << " "; };
+	auto isTarget = [&target](Character* t) { return target == t->data_m.name_m; };
+
+	std::cout << "Select target.\t";
+	std::for_each(targets.begin(), targets.end(), print);
+	std::cout << std::endl;
 
 	//ターゲットをCUI入力(正しく入力するまで繰り返し)
-	while( true ) {
-		std::cout << "Target:";
+	do {
+		std::cout << "target-->";
 		std::cin >> target;
-		if( std::any_of( targets.begin(), targets.end(), contains ) ) {
-			break;
-		}
-	}
+	} while(std::none_of(targets.begin(), targets.end(), isTarget));
 
 	//攻撃者の行動として設定
-	attacker->select( { skillName, target } );
-
-	return 1;
+	return{ action, target };
 }

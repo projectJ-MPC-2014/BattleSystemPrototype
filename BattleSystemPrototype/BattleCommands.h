@@ -13,13 +13,13 @@ class BattleCommands
 {
 public:
 	/**コマンドの集合の型*/
-	typedef std::vector < std::string > Commands;
+	typedef std::vector<std::string> Commands;
 public:
 	/**コマンドの集合*/
 	static const Commands COMMANDS_m;
 	/**
 	*コマンドの種類数を返す
-	*return コマンドの種類数
+	*@return コマンドの種類数
 	*/
 	static const int getNumOfCommands();
 

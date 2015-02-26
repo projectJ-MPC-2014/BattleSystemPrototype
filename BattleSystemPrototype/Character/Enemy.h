@@ -1,10 +1,7 @@
 #pragma once
 
 #include"Character.h"
-#include"../BattleCommands.h"
-#include<random>
-#include<list>
-#include<algorithm>
+#include"../Selector/RandomSelector.h"
 
 /**
 *敵キャラクタ
@@ -13,8 +10,13 @@ class Enemy : public Character
 {
 public:
 	/**コンストラクタ*/
-	Enemy(std::string name, CharaData data, int id);
+	Enemy(CharaData data);
 	/**デストラクタ*/
 	~Enemy() = default;
 public:
+	/**
+	*ランダムに行動選択するクラスを生成する
+	*行動選択クラスへのポインタ
+	*/
+	std::unique_ptr<Selector> getSelector()override;
 };

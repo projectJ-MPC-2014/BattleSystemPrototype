@@ -1,11 +1,13 @@
 #include "Enemy.h"
 
-//const int Enemy::NUMBER_OF_COMMANDS = 3;
-//const std::string Enemy::COMMANDS[NUMBER_OF_COMMANDS] = { "attack", "magic", "care" };
-
-Enemy::Enemy(std::string name, CharaData data, int id)
-:Character(name, data, id)
+Enemy::Enemy(CharaData data)
+:Character(data)
 {
-	iff_m = Iff::FOE;
+	data_m.iff_m = Iff::FOE;
 }
 
+
+std::unique_ptr<Selector> Enemy::getSelector()
+{
+	return std::make_unique<RandomSelector>();
+}

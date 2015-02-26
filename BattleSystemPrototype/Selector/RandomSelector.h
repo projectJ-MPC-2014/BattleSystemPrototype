@@ -1,6 +1,7 @@
 #pragma once
 
 #include <random>
+#include<iostream>
 #include "Selector.h"
 #include "../BattleCommands.h"
 
@@ -34,6 +35,6 @@ public:
 	 *		‘I‘ð‚³‚ê‚½‚ç1
 	 *		‘I‘ð‚³‚ê‚È‚©‚Á‚½‚ç0
 	 */
-	int select( Character *attacker, CharaList characters );
+	Selection select( Character *attacker, CharacterList characters )override;
 };
 

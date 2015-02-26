@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include "Selector.h"
+#include"../BattleCommands.h"
 
 /**
  * キャラクタの行動をCUIから選択するクラス
@@ -23,6 +24,6 @@ public:
 	 *		選択されたら1
 	 *		選択されなかったら0
 	 */
-	int select( Character *attacker, CharaList characters );
+	Selection select( Character *attacker, CharacterList characters )override;
 };
 
